@@ -16,83 +16,125 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<body class="home">
     
     <header class="header-section">
-        <div class="container">
-            <div class="row">
-                <div class="r_header_logo col-sm-12 col-md-12 col-lg-3 col-xl-3">
-                    <div class="r_logo_area">
-                        <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
-                    </div>
-                </div>
-                <div class="r_header_menu col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                    <div class="r_header_menu">
-                        <ul>
-                            <li class="menu-item-has-children">
-                                <a href="#">soluzioni</a>
-                                <ul class="sub-menu">
-                                    <li class="menu-item-has-children">
-                                        <a href="#">Prodotti</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="#">E_commerce</a></li>
-                                            <li><a href="#">Imballaggi cartone ondulato</a></li>
-                                            <li><a href="#">Fustellati custom</a></li>
-                                            <li><a href="#">Espositori</a></li>
-                                            <li><a href="#">Cartotecnica</a></li>
-                                            <li><a href="#">Lavorazioni speciali</a></li>
-                                            <li><a href="#">Packaging just in time</a></li>
-                                            <li><a href="#">Stampa FLEXO HD</a></li>
-                                            <li><a href="#">Stampa OFFSET e digitale</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item-has-children">
-                                        <a href="#">Servizi</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="#">Progettazione</a></li>
-                                            <li><a href="#">Ricerca & Sviluppo</a></li>
-                                            <li><a href="#">Logistica</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Tipologie di cartone</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">CHI SIAMO</a></li>
-                            <li><a href="#">COME OPERIAMO</a></li>
-                            <li><a href="#">CASE HISTORY</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="r_header_right col-sm-12 col-md-12 col-lg-3 col-xl-3">
-                    <div class="r_header_right_con">
-                        <div class="r_toggle_menu_area">
-                            <span><i class="fa fa-bars"></i> <i class="fa fa-times"></i>
-                            </span>
-                            <div class="r_toggle_menu">
-                                <ul>
-                                    <li>Focus ON</li>
-                                    <li>Lavora con noi</li>
-                                    <li>Contatti</li>
-                                </ul>
-                            </div>                            
+        <div class="r_header_main">
+            <div class="container">
+                <div class="row">
+                    <div class="r_header_logo col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                        <div class="r_logo_area">
+                            <a href="index.html"><img src="assets/images/logo-white.png" alt=""></a>
                         </div>
-                        <div class="r_hr_middle_area">
+                    </div>
+                    <div class="r_header_menua_area r_hide_on_mobile col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                        <div class="r_header_menu">
                             <ul>
-                                <li><a href="#">area riservata</a></li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">soluzioni</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item-has-children">
+                                            <a href="#">Prodotti</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="#">E_commerce</a></li>
+                                                <li><a href="#">Imballaggi cartone ondulato</a></li>
+                                                <li><a href="#">Fustellati custom</a></li>
+                                                <li><a href="#">Espositori</a></li>
+                                                <li><a href="#">Cartotecnica</a></li>
+                                                <li><a href="#">Lavorazioni speciali</a></li>
+                                                <li><a href="#">Packaging just in time</a></li>
+                                                <li><a href="#">Stampa FLEXO HD</a></li>
+                                                <li><a href="#">Stampa OFFSET e digitale</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="#">Servizi</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="#">Progettazione</a></li>
+                                                <li><a href="#">Ricerca & Sviluppo</a></li>
+                                                <li><a href="#">Logistica</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Tipologie di cartone</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="chi-siamo.html">CHI SIAMO</a></li>
+                                <li><a href="#">COME OPERIAMO</a></li>
+                                <li><a href="#">CASE HISTORY</a></li>
                             </ul>
                         </div>
-                        <div class="r_hr_lang_area">
-                            <a href="#">EN</a>
+                    </div>
+                    <div class="r_header_right col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                        <div class="r_header_right_con">
+                            <div class="r_toggle_menu_area">
+                                <span class="r_tm_btn">
+                                    <span class="r_tm_on"><i class="fa fa-bars"></i></span> 
+                                    <span class="r_tm_off"><i class="fa fa-times"></i>
+                                    </span>
+                                </span>
+                                <div class="r_toggle_menu">
+                                    <div class="show_mobile_menu" style="display: none;">
+                                        <ul>
+                                            <li class="menu-item-has-children">
+                                                <a href="#">soluzioni</a>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item-has-children">
+                                                        <a href="#">Prodotti</a>
+                                                        <ul class="sub-menu">
+                                                            <li><a href="#">E_commerce</a></li>
+                                                            <li><a href="#">Imballaggi cartone ondulato</a></li>
+                                                            <li><a href="#">Fustellati custom</a></li>
+                                                            <li><a href="#">Espositori</a></li>
+                                                            <li><a href="#">Cartotecnica</a></li>
+                                                            <li><a href="#">Lavorazioni speciali</a></li>
+                                                            <li><a href="#">Packaging just in time</a></li>
+                                                            <li><a href="#">Stampa FLEXO HD</a></li>
+                                                            <li><a href="#">Stampa OFFSET e digitale</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="menu-item-has-children">
+                                                        <a href="#">Servizi</a>
+                                                        <ul class="sub-menu">
+                                                            <li><a href="#">Progettazione</a></li>
+                                                            <li><a href="#">Ricerca & Sviluppo</a></li>
+                                                            <li><a href="#">Logistica</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="#">Tipologie di cartone</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="chi-siamo.html">CHI SIAMO</a></li>
+                                            <li><a href="#">COME OPERIAMO</a></li>
+                                            <li><a href="#">CASE HISTORY</a></li>
+                                        </ul>
+                                    </div>
+                                    <ul>
+                                        <li class="current-menu-item"><a href="#">Focus ON</a></li>
+                                        <li><a href="#">Lavora con noi</a></li>
+                                        <li><a href="#">Contatti</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="r_hr_middle_area r_hide_on_mobile">
+                                <ul>
+                                    <li><a href="#">area riservata</a></li>
+                                </ul>
+                            </div>
+                            <div class="r_hr_lang_area">
+                                <a href="#">EN</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>          
+                </div>          
+            </div>
         </div>
     </header>
 
     <!-- main content area -->
 
-       <h1>Home page</h1>
+    <div class="home_slider">
+        <img src="assets/images/home/banner.jpg" alt="">
+    </div>
 
 
     <!-- main content area -->
@@ -147,7 +189,7 @@
     
     <!-- jQuery -->
 
-    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/jquery-1.11.3.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/all.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
