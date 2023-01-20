@@ -154,3 +154,30 @@ footer a:hover {
 .r_footer_left_con {
     padding-top: 60px;
 }
+/* header */
+.header-section ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.r_toggle_menu {
+    display: none;
+}
+.r_header_menu > ul > li.menu-item-has-children > .sub-menu {
+    display: none;
+}
+.r_header_menu > ul > li {
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+.r_header_menu {
+    text-align: center;
+}
+.r_header_right_con > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+.r_header_right_con {
+    text-align: right;
+}
