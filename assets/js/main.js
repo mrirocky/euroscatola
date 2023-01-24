@@ -10,7 +10,25 @@ jQuery('.r_header_menu > ul > li.menu-item-has-children').on('click', function()
   jQuery('.header-section').toggleClass("mm_toggle_active");
 });
 ;(function($) {
-new WOW().init();
+	new WOW().init();
+    $('.home_team_slider').owlCarousel({
+        smartSpeed: 450,
+        nav: false,
+        loop: true,
+        autoplay: true,
+        dots: false,
+        items: 1,
+        margin: 0,
+    });
+    $('.r_hm_slider').owlCarousel({
+        smartSpeed: 3000,
+        nav: false,
+        loop: true,
+        autoplay: true,
+        dots: false,
+        items: 1,
+        margin: 0,
+    });
 })(jQuery);
 jQuery('.hover_btn').hover(
    function(){ 
