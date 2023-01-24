@@ -13,22 +13,22 @@
 }
 
 .azienda-tabs-wrap .tab-content #bregnano {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.73)), url(/assets/images/chi-siamo/azinda-bg.png);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.73)), url(../images/chi-siamo/azinda-bg.png);
 
 }
 
 .azienda-tabs-wrap .tab-content #cantù {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.73)), url(/assets/images/chi-siamo/azinda-bg.png);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.73)), url(../images/chi-siamo/azinda-bg.png);
 
 }
 
 .azienda-tabs-wrap .tab-content #lomazzo {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.73)), url(/assets/images/chi-siamo/azinda-bg.png);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.73)), url(../images/chi-siamo/azinda-bg.png);
 
 }
 
 .azienda-tabs-wrap .tab-content #cermenate {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.73)), url(/assets/images/chi-siamo/azinda-bg.png);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.73)), url(../images/chi-siamo/azinda-bg.png);
 
 }
 
@@ -54,7 +54,7 @@
 }
 
 .section-top-title {
-    margin-left: 60px;
+    /* margin-left: 60px; */
 }
 
 .chi-siamo-nav-wrap ul li a:after {
@@ -78,10 +78,10 @@
 
 
 .azienda-top-area .azienda-top-title {
-    font-size: 120px;
+    font-size: 221px;
     font-weight: bold;
     text-transform: uppercase;
-    line-height: 108px;
+    line-height: 190px;
     margin-bottom: 25px;
 }
 
@@ -94,9 +94,9 @@
 
 
 .azienda-top-area .azienda-subtitle {
-    font-size: 38px;
+    font-size: 45px;
     font-weight: 300;
-    line-height: 43px;
+    line-height: 50px;
 }
 
 .azienda-tabs-section .azienda-tabs-wrap ul.nav-tabs {
@@ -120,10 +120,12 @@
     border: none;
     position: relative;
     color: #000;
+    font-size: 20px;
 }
 
 .azienda-tabs-section .azienda-tabs-wrap ul.nav-tabs li button.active {
-    font-size: 25px;
+    font-size: 45px;
+    padding-bottom: 20px;
 }
 
 .azienda-tabs-section .azienda-tabs-wrap ul.nav-tabs li button.active:after {
@@ -282,17 +284,19 @@ p.eu-scisiamo-small-section-title.small-tilt {
 }
 
 .chi-siamo-mv-single.first-half button.active {
-    font-size: 50px;
+    font-size: 90px;
     text-transform: uppercase;
     font-weight: 300;
     position: relative;
     text-align: right;
+    margin-right: 306px;
 }
 
 .chi-siamo-mv-single.first-half button {
-    margin-right: 100px;
+    margin-right: 235px;
     text-align: right;
     margin-bottom: 50px;
+    font-size: 30px;
 }
 
 .chi-siamo-mv-single.first-half button.active:after {
@@ -301,8 +305,8 @@ p.eu-scisiamo-small-section-title.small-tilt {
     height: 2px;
     width: 60px;
     background: #fff;
-    bottom: 0;
-    left: 100%;
+    bottom: -13px;
+    left: 130%;
 }
 
 
@@ -319,7 +323,7 @@ p.eu-scisiamo-small-section-title.small-tilt {
     height: 100%;
     justify-content: initial;
     align-items: center;
-    background-image: url(/assets/images/chi-siamo/mission-vission-bg.png);
+    background-image: url(../images/chi-siamo/mission-vission-bg.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
@@ -329,6 +333,7 @@ p.eu-scisiamo-small-section-title.small-tilt {
     width: 380px;
     margin-left: 100px;
     font-family: 'IBM Plex Sans';
+    font-size: 18px;
 }
 
 /* Mission and Vission  */
@@ -342,7 +347,7 @@ p.eu-scisiamo-small-section-title.small-tilt {
 .lesixp-list-item-section {
     height: 800px;
     background-color: #ddd;
-    /* background-image: url(/assets/images/chi-siamo/azinda-bg.png); */
+    background-image: url(../images/chi-siamo/lpe_six_bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -393,6 +398,41 @@ p.eu-scisiamo-small-section-title.small-tilt {
     visibility: visible;
 }
 
+
+.lesixp-list-item-section .sesixp-list-wrap ul li.show {
+    padding-left: 100px;
+    border: none;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.lesixp-list-item-section .sesixp-list-wrap ul li.show p.title {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+}
+
+.lesixp-list-item-section .sesixp-list-wrap ul li.show:after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 285px;
+    background: red;
+    bottom: 0;
+}
+
+.lesixp-list-item-section .sesixp-list-wrap ul li.show svg {
+    padding-left: 48px;
+    color: #fff;
+}
+
+.lesixp-list-item-section .sesixp-list-wrap ul li.show p.description {
+    color: #fff;
+}
+
+.lesixp-list-item-section .sesixp-list-wrap ul li p {
+    font-weight: 300;
+    font-size: 45px;
+}
 
 /* persone css styleing start now */
 .persone-section-wrap {
@@ -598,7 +638,7 @@ p.eu-scisiamo-small-section-title.small-tilt {
     display: block;
     position: absolute;
     left: 0px;
-    bottom: -132px;
+    bottom: -150px;
     padding: 20px 20px 0px;
     transition: .5s;
     padding-right: 100px;
@@ -610,7 +650,7 @@ p.eu-scisiamo-small-section-title.small-tilt {
 }
 
 .valori-single-slider-item:hover .valori-single-info {
-    bottom: 0px;
+    bottom: -16px;
     padding-right: 100px;
 }
 
@@ -658,10 +698,10 @@ p.eu-scisiamo-small-section-title.small-tilt {
 }
 
 .valori-timeline-single-item {
-    max-width: 992px;
-    height: 959px;
+    /* max-width: 992px; */
+    min-height: 959px;
     background-color: #596f63;
-    padding: 140px;
+    /* padding: 140px; */
 }
 
 .valori-timeline-single-item h2 {
@@ -699,6 +739,13 @@ p.eu-scisiamo-small-section-title.small-tilt {
 .valori-img-single-item {
     width: 100%;
     height: 100%;
+}
+
+.valori-img-single-item {
+    background-image: url(../images/home/home.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
 /* slick  */
@@ -772,6 +819,31 @@ p.eu-scisiamo-small-section-title.small-tilt {
     font-family: "Roboto";
 }
 
+.chi-siamo-number-slider {
+    position: relative;
+}
+
+.chi-siamo-number-slider .slick-prev {
+    display: none !important;
+}
+
+.chi-siamo-number-slider .slick-next {
+    position: absolute;
+    right: 0;
+    border: 1px solid #333;
+    height: 85px;
+    width: 85px;
+    border-radius: 50%;
+    background: #fff;
+    margin-top: -100px;
+    font-size: 30px;
+    transform: rotate(90deg);
+}
+
+
+.chi-siamo-number-slider .number-single-item {
+    margin-bottom: 120px;
+}
 
 /* responsive media query any devices   */
 

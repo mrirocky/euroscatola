@@ -22,6 +22,17 @@ jQuery(document).ready(function ($) {
 
     });
 
+    // valori slider 
+    $('.chi-siamo-number-slider').slick({
+        infinite: true,
+        slidesToShow: 4,
+        autoplay: true,
+        prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-long-arrow-left' aria-hidden='true'></i></button>",
+        nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-long-arrow-right' aria-hidden='true'></i></button>",
+        nav: false,
+
+    });
+
     $('.valori-sliders').on('afterChange', function (event, slick, currentSlide) {
         var testing = $(".slick-active").children().first();
 
