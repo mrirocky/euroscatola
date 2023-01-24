@@ -53,6 +53,10 @@
     color: rgb(223, 0, 103);
 }
 
+.section-top-title {
+    margin-left: 60px;
+}
+
 .chi-siamo-nav-wrap ul li a:after {
     content: '';
     height: 16px;
@@ -387,4 +391,527 @@ p.eu-scisiamo-small-section-title.small-tilt {
 .lesixp-list-item-section .sesixp-list-wrap ul li.show p.description {
     opacity: 1;
     visibility: visible;
+}
+
+
+/* persone css styleing start now */
+.persone-section-wrap {
+    height: auto;
+    position: relative;
+}
+
+.persone-top-title {
+    position: absolute;
+    left: 150px;
+    bottom: -266px;
+}
+
+.persone-title {
+    font-size: 131px;
+    line-height: 125px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 300;
+    font-family: "Roboto";
+    max-width: 70%;
+
+}
+
+.persone-title span {
+    color: #ca1868;
+}
+
+/* team-members styleing now */
+.team-members {
+    background-color: #A8ADA9;
+    margin-top: 320px;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team-member-item {
+    max-width: 33%;
+}
+
+.team-member-top-title {
+    padding: 30px 20px 20px;
+    position: relative;
+}
+
+.team-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    left: 0px;
+    bottom: -250px;
+    padding: 20px;
+
+}
+
+.team-member-title {
+    font-size: 76px;
+    line-height: 75px;
+    text-transform: uppercase;
+    color: #f3f1ee;
+    font-weight: 100;
+    font-family: "Roboto";
+}
+
+.team-member-title span {
+    font-size: 76px;
+    line-height: 75px;
+    text-transform: uppercase;
+    color: #f3f1ee;
+    font-weight: 500;
+    font-family: "Roboto";
+}
+
+.button-title {
+    font-size: 24px;
+    line-height: 73px;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: "IBM Plex Sans";
+}
+
+.team-button {
+    margin-left: 50px;
+}
+
+.team-button {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-button svg {
+    color: #fff;
+    font-size: 30px;
+}
+
+
+/*  Team Bottom section styleing now */
+.team-bottom {
+    padding: 50px 0px;
+    background-color: #fff;
+}
+
+.team-bottom-title h4 {
+    font-size: 25px;
+    line-height: 30px;
+    color: #121212;
+    font-weight: 400;
+    font-family: "IBM Plex Sans";
+}
+
+.team-bottom-title ul {
+    list-style: none;
+    margin-top: 25px;
+}
+
+.team-bottom-title ul li {
+    font-size: 18px;
+    line-height: 30px;
+    color: #121212;
+    font-weight: 400;
+    font-family: "IBM Plex Sans";
+}
+
+/* valori section styleing start now */
+.valori>p.eu-scisiamo-small-section-title.small-tilt {
+    top: 153px;
+    text-transform: uppercase;
+}
+
+.valori-single-item h1 {
+    font-size: 221px;
+    line-height: 180px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 500;
+    font-family: "Roboto";
+}
+
+.valori-single-item h1 span {
+    display: block;
+    font-size: 18px;
+    line-height: 73px;
+    text-transform: uppercase;
+    color: #c91c7b;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.valori-single-item p {
+    font-size: 45px;
+    line-height: 55px;
+    text-transform: uppercase;
+    color: #2d2d2d;
+    font-weight: 300;
+    font-family: "Roboto";
+}
+
+
+/* service slider section styleing now */
+
+.valori-slider {
+    left: 0px;
+    position: relative;
+}
+
+.valori-slider-arrow svg {
+    color: #000;
+    font-size: 30px;
+}
+
+.valori-sliders {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 30px 0px;
+    gap: 30px;
+}
+
+.valori-single-slider-item {
+    min-width: 400px;
+    height: 478px;
+    border-radius: 0px;
+    background-color: #DCDDDB;
+    border: 0.88px solid #ffffff;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.valori-single-info {
+    display: block;
+    position: absolute;
+    left: 0px;
+    bottom: -132px;
+    padding: 20px 20px 0px;
+    transition: .5s;
+    padding-right: 100px;
+
+}
+
+.valori-single-slider-item:first-child {
+    background-color: #f5f2ed;
+}
+
+.valori-single-slider-item:hover .valori-single-info {
+    bottom: 0px;
+    padding-right: 100px;
+}
+
+.valori-slider-wrap .active .valori-single-info {
+    bottom: 0px;
+}
+
+
+.valori-single-info h4 {
+    font-size: 40px;
+    line-height: 34px;
+    color: #000000;
+    font-weight: 300;
+    font-family: "Roboto";
+}
+
+.valori-single-info p {
+    font-size: 16px;
+    line-height: 20px;
+    color: #121212;
+    font-weight: 400;
+    font-family: "IBM Plex Sans";
+    margin-top: 30px;
+}
+
+.valori-single-info hr {
+    width: 205px;
+    height: 9px;
+    border-radius: 0px;
+    opacity: 1;
+    background-color: #ca1868;
+}
+
+
+/* valori-timeline section styleing now */
+.valori-timeline {
+    padding: 50px 0px;
+
+}
+
+.valori-timeline-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.valori-timeline-single-item {
+    max-width: 992px;
+    height: 959px;
+    background-color: #596f63;
+    padding: 140px;
+}
+
+.valori-timeline-single-item h2 {
+    font-size: 55px;
+    line-height: 60px;
+    color: #fdfdfd;
+    font-weight: 100;
+    font-family: "Roboto";
+}
+
+.valori-timeline-single-item h2 span {
+    font-size: 55px;
+    line-height: 60px;
+    color: #fdfdfd;
+    font-weight: 500;
+    font-family: "Roboto";
+}
+
+.valori-timeline-single-item p {
+    font-size: 18px;
+    line-height: 25px;
+    color: #f3f1ee;
+    font-weight: 400;
+    font-family: "IBM Plex Sans";
+    margin-top: 200px;
+}
+
+.valori-img-single-item {
+    opacity: 0.769;
+    max-width: 991px;
+    height: 959px;
+    background-color: #596f63;
+}
+
+.valori-img-single-item {
+    width: 100%;
+    height: 100%;
+}
+
+/* slick  */
+.valori-sliders .slick-prev {
+    display: none !important;
+}
+
+.valori-sliders {
+    position: relative;
+    margin-top: 8rem;
+    margin-left: 100px;
+}
+
+.valori-sliders .slick-next {
+    position: absolute;
+    right: 17%;
+    top: -115px;
+}
+
+.valori-sliders .slick-next {
+    border: 1px solid;
+    height: 85px;
+    width: 85px;
+    border-radius: 50%;
+    background: #fff;
+    font-size: 27px;
+}
+
+/* number-section styleing strat now */
+.section-padding-section-margin {
+    padding: 50px 0px;
+}
+
+.numberi-section-title {
+    margin: 20px 0px;
+}
+
+.numberi-section-title h2 {
+    font-size: 55px;
+    line-height: 60px;
+    color: #000000;
+    font-weight: 100;
+    font-family: "Roboto";
+}
+
+.numberi-section-title h2 span {
+    font-size: 55px;
+    line-height: 60px;
+    color: #000000;
+    font-weight: 500;
+    font-family: "Roboto";
+}
+
+.number-single-item {
+    padding: 20px 0px;
+}
+
+.number-single-item h2 {
+    font-size: 171px;
+    line-height: 186px;
+    color: #343434;
+    font-weight: 500;
+    font-family: "Roboto";
+}
+
+.number-single-item p {
+    font-size: 30px;
+    line-height: 35px;
+    color: #111111;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+
+/* responsive media query any devices   */
+
+@media only screen and (max-width: 1356px) {
+    .azienda-top-area {
+        margin-left: 60px;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .azienda-top-area {
+        margin-left: 70px;
+    }
+
+    .azienda-top-area h1.azienda-top-title span {
+        font-size: 34%;
+    }
+
+    .azienda-tabs-wrap .tab-content .tab-pane {
+        height: 750px;
+    }
+
+    .zienda-single-tab-content-wrap .azienda-single-slider.first-block {
+        padding: 0 20px;
+    }
+
+    .zienda-single-tab-content-wrap .azienda-single-slider.second-block {
+        padding: 0 20px;
+    }
+}
+
+
+@media only screen and (max-width: 991px) {
+    .azienda-top-area {
+        margin-left: 75px;
+    }
+
+    .azienda-top-area h1.azienda-top-title span {
+        font-size: 30%;
+    }
+
+    .azienda-top-area p.azienda-subtitle {
+        font-size: 30px;
+    }
+
+    /* .zienda-single-tab-content-wrap{
+        align-items: ce
+    } */
+    .azienda-tabs-wrap .tab-content .tab-pane {
+        height: 600px;
+    }
+
+    .mission-vission-section {
+        height: 700px;
+    }
+
+    .align-items-start {
+        flex-direction: column;
+    }
+
+    .chi-siamo-mv-single {
+        width: 100%;
+    }
+
+    .chi-siamo-mv-single.first-half button.active::after {
+        display: none;
+    }
+
+    .chi-siamo-mv-single {
+        align-items: center;
+    }
+
+    .chi-siamo-mv-single.second-half .tab-pane.active {
+        background-size: cover;
+    }
+
+    .chi-siamo-mv-single.second-half .mission-vission-single-tab p {
+        max-width: 80%;
+        width: 100%;
+    }
+
+    .chi-siamo-mv-single.first-half button {
+        margin-bottom: 15px;
+        margin-right: 90px;
+    }
+
+    .chi-siamo-mv-single.first-half button:last-child {
+        text-align: center;
+        margin-left: 50px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .azienda-top-area {
+        margin-left: 85px;
+    }
+
+    .azienda-top-area h1.azienda-top-title {
+        font-size: 100px;
+        line-height: 100px;
+    }
+
+    .azienda-top-area h1.azienda-top-title span {
+        font-size: 28%;
+    }
+
+    .azienda-top-area p.azienda-subtitle {
+        font-size: 23px;
+    }
+
+    .azienda-tabs-wrap .tab-content .tab-pane {
+        height: 550px;
+    }
+
+    .zienda-single-tab-content-wrap .azienda-single-slider.first-block {
+        margin-right: unset;
+    }
+
+    .mission-vission-section {
+        height: 600px;
+    }
+
+    .sesixp-list-wrap {
+        padding-top: 0px;
+    }
+}
+
+
+@media only screen and (max-width: 578px) {
+    .azienda-top-area {
+        margin-left: 100px;
+    }
+
+    .azienda-top-area h1.azienda-top-title span {
+        font-size: 25%;
+    }
+
+    .azienda-tabs-wrap .tab-content .tab-pane {
+        height: 500px;
+    }
 }
