@@ -3,3 +3,388 @@
 /* font-family: 'Lato', sans-serif; */
 /* font-family: 'Roboto', sans-serif; */
 
+:root {
+    --brand-red: #ca1868;
+    --brand-font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.brand-red-text {
+    color: #ca1868;
+}
+
+.azienda-tabs-wrap .tab-content #bregnano {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.73)), url(/assets/images/chi-siamo/azinda-bg.png);
+
+}
+
+.azienda-tabs-wrap .tab-content #cantù {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.73)), url(/assets/images/chi-siamo/azinda-bg.png);
+
+}
+
+.azienda-tabs-wrap .tab-content #lomazzo {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.73)), url(/assets/images/chi-siamo/azinda-bg.png);
+
+}
+
+.azienda-tabs-wrap .tab-content #cermenate {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.73)), url(/assets/images/chi-siamo/azinda-bg.png);
+
+}
+
+.section-nav {
+    background: #ddd;
+}
+
+.chi-siamo-nav-wrap ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.chi-siamo-nav-wrap ul li a {
+    display: block;
+    padding: 5px 12px;
+    position: relative;
+    color: #000;
+}
+
+.chi-siamo-nav-wrap ul li a:hover,
+.chi-siamo-nav-wrap ul li a:active {
+    color: rgb(223, 0, 103);
+}
+
+.chi-siamo-nav-wrap ul li a:after {
+    content: '';
+    height: 16px;
+    width: 2px;
+    position: absolute;
+    background: rgb(223, 0, 103);
+    top: 13px;
+    right: 0;
+}
+
+.azienda-top-area {
+    margin-bottom: 50px;
+}
+
+
+.section-padding {
+    padding: 50px 0;
+}
+
+
+.azienda-top-area .azienda-top-title {
+    font-size: 120px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 108px;
+    margin-bottom: 25px;
+}
+
+.azienda-top-area .azienda-top-title span {
+    display: block;
+    font-weight: normal;
+    color: rgb(223, 0, 103);
+    font-size: 40%;
+}
+
+
+.azienda-top-area .azienda-subtitle {
+    font-size: 38px;
+    font-weight: 300;
+    line-height: 43px;
+}
+
+.azienda-tabs-section .azienda-tabs-wrap ul.nav-tabs {
+    border: none;
+}
+
+.azienda-tabs-section .azienda-tabs-wrap ul.nav-tabs li {
+    width: 25%;
+}
+
+.azienda-tabs-section .azienda-tabs-wrap ul.nav-tabs li {
+    display: flex;
+    justify-content: center;
+}
+
+.azienda-tabs-section .azienda-tabs-wrap ul.nav-tabs li a {
+    position: relative;
+}
+
+.azienda-tabs-section .azienda-tabs-wrap ul.nav-tabs li button {
+    border: none;
+    position: relative;
+    color: #000;
+}
+
+.azienda-tabs-section .azienda-tabs-wrap ul.nav-tabs li button.active {
+    font-size: 25px;
+}
+
+.azienda-tabs-section .azienda-tabs-wrap ul.nav-tabs li button.active:after {
+    content: '';
+    height: 6px;
+    width: 100%;
+    background: rgb(223, 0, 103);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.azienda-tabs-wrap .tab-content .tab-pane {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    /* display: flex; */
+    align-items: end;
+    padding-bottom: 50px;
+    justify-content: center;
+}
+
+.azienda-tabs-wrap .tab-content .tab-pane:after {
+    content: '';
+    background: #333;
+    opacity: .5;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.zienda-single-tab-content-wrap {
+    display: flex;
+    align-items: end;
+    height: 100%;
+    justify-content: center;
+}
+
+.azienda-tabs-wrap .tab-content .tab-pane {
+    height: 870px;
+}
+
+.azienda-tabs-wrap .tab-content #bregnano {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.zienda-single-tab-content-wrap .azienda-single-slider.second-block {
+    padding-left: 20px;
+}
+
+.zienda-single-tab-content-wrap .azienda-single-slider.second-block ul {
+    column-count: 2;
+}
+
+.zienda-single-tab-content-wrap .azienda-single-slider.second-block ul li {
+    list-style: none;
+    font-weight: 200;
+}
+
+.zienda-single-tab-content-wrap .azienda-single-slider h2 {
+    margin-bottom: 20px;
+}
+
+.zienda-single-tab-content-wrap .azienda-single-slider p {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.zienda-single-tab-content-wrap .azienda-single-slider.first-block {
+    max-width: 250px;
+    margin-right: 100px;
+}
+
+section {
+    position: relative;
+}
+
+.eu-scisiamo-small-section-title {
+    text-transform: uppercase;
+    position: relative;
+    transform: rotate(-90deg);
+    display: inline-block;
+    position: absolute;
+    left: 50px;
+}
+
+.azienda-section .eu-scisiamo-small-section-title {
+    top: 150px;
+}
+
+.eu-scisiamo-small-section-title span {
+    position: absolute;
+    height: 1.5px;
+    width: 100%;
+    background: var(--brand-red);
+    top: 100%;
+    left: 0;
+}
+
+.sedi-section-wrap h2,
+.lesixp-section h2 {
+    font-size: 45px;
+    font-family: var(--brand-font-family);
+    font-weight: 400;
+}
+
+.sedi-section-wrap h2 span,
+.lesixp-section h2 span {
+    display: block;
+
+}
+
+
+p.eu-scisiamo-small-section-title.small-tilt {
+    top: 65px;
+}
+
+.mission-vission-section {
+    height: 800px;
+}
+
+.mission-vission-section .mission-vission-section-wrap {
+    height: 100%;
+    align-items: center !important
+}
+
+.chi-siamo-mv-single {
+    width: 50%;
+}
+
+.mission-vission-section .nav button {
+    width: 300px;
+}
+
+.chi-siamo-mv-single {
+    height: 100%;
+    justify-content: center;
+    align-items: end;
+}
+
+.chi-siamo-mv-single.first-half {
+    background: var(--brand-red);
+    margin-right: 0 !important;
+}
+
+.chi-siamo-mv-single.first-half button {
+    background: transparent !important;
+    color: #fff;
+}
+
+.chi-siamo-mv-single.first-half button.active {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 300;
+    position: relative;
+    text-align: right;
+}
+
+.chi-siamo-mv-single.first-half button {
+    margin-right: 100px;
+    text-align: right;
+    margin-bottom: 50px;
+}
+
+.chi-siamo-mv-single.first-half button.active:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 60px;
+    background: #fff;
+    bottom: 0;
+    left: 100%;
+}
+
+
+.chi-siamo-mv-single.second-half {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(109, 109, 109, .4) 100%);
+}
+
+.chi-siamo-mv-single.second-half .tab-pane.active {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: initial;
+    align-items: center;
+    background-image: url(/assets/images/chi-siamo/mission-vission-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.chi-siamo-mv-single.second-half .mission-vission-single-tab p {
+    width: 380px;
+    margin-left: 100px;
+    font-family: 'IBM Plex Sans';
+}
+
+/* Mission and Vission  */
+
+.lesixp-section-wrap {
+    margin-bottom: 100px;
+}
+
+/* LP six  */
+
+.lesixp-list-item-section {
+    height: 800px;
+    background-color: #ddd;
+    /* background-image: url(/assets/images/chi-siamo/azinda-bg.png); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lesixp-list-item-section .sesixp-list-wrap ul li p {
+    font-size: 35px;
+    font-family: var(--brand-font-family);
+}
+
+
+.lesixp-list-item-section .sesixp-list-wrap ul li {
+    display: flex;
+    padding: 30px;
+    padding-left: 70px;
+    position: relative;
+    border-bottom: 1px solid;
+    padding-bottom: 30px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.lesixp-list-item-section .sesixp-list-wrap ul li p.description {
+    font-size: 16px;
+    text-align: left;
+    width: 268px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.lesixp-list-item-section .sesixp-list-wrap ul li svg {
+    font-size: 45px;
+    position: absolute;
+    left: 0;
+}
+
+.lesixp-list-item-section .sesixp-list-wrap ul li p {
+    width: 50%;
+}
+
+.sesixp-list-wrap {
+    padding-top: 100px;
+}
+
+.lesixp-list-item-section .sesixp-list-wrap ul li.show p.description {
+    opacity: 1;
+    visibility: visible;
+}

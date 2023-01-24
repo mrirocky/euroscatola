@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/css/jquery-ui.css">
     <link rel="stylesheet" href="assets/css/nice-select-style.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/am-style.css">
 </head>
 
 <body>
@@ -68,11 +69,23 @@
                         <div class="r_header_right_con">
                             <div class="r_toggle_menu_area">
                                 <span class="r_tm_btn">
-                                    <span class="r_tm_on"><i class="fa fa-bars"></i></span> 
-                                    <span class="r_tm_off"><i class="fa fa-times"></i>
+                                    <span class="r_tm_on"><svg class="svg-inline--fa fa-bars" aria-hidden="true"
+                                            focusable="false" data-prefix="fas" data-icon="bars" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                                            <path fill="currentColor"
+                                                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z">
+                                            </path>
+                                        </svg><!-- <i class="fa fa-bars"></i> Font Awesome fontawesome.com --></span>
+                                    <span class="r_tm_off"><svg class="svg-inline--fa fa-xmark" aria-hidden="true"
+                                            focusable="false" data-prefix="fas" data-icon="xmark" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg="">
+                                            <path fill="currentColor"
+                                                d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z">
+                                            </path>
+                                        </svg><!-- <i class="fa fa-times"></i> Font Awesome fontawesome.com -->
                                     </span>
                                 </span>
-                                <div class="r_toggle_menu">
+                                <div class="r_toggle_menu" style="display: none;">
                                     <div class="show_mobile_menu" style="display: none;">
                                         <ul>
                                             <li class="menu-item-has-children">
@@ -96,7 +109,7 @@
                                                         <a href="#">Servizi</a>
                                                         <ul class="sub-menu">
                                                             <li><a href="#">Progettazione</a></li>
-                                                            <li><a href="#">Ricerca & Sviluppo</a></li>
+                                                            <li><a href="#">Ricerca &amp; Sviluppo</a></li>
                                                             <li><a href="#">Logistica</a></li>
                                                         </ul>
                                                     </li>
@@ -119,19 +132,14 @@
                                 <ul>
                                     <li><a href="#">area riservata</a></li>
                                 </ul>
-                            </div>                            
-                        </div>
-                        <div class="r_hr_middle_area">
-                            <ul>
-                                <li><a href="#">area riservata</a></li>
-                            </ul>
-                        </div>
-                        <div class="r_hr_lang_area">
-                            <a href="#">EN</a>
+                            </div>
+                            <div class="r_hr_lang_area">
+                                <a href="#">EN</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>          
+            </div>
         </div>
     </header>
 
@@ -160,9 +168,10 @@
 
     <!-- azienda section starts   -->
     <section class="section-padding azienda-section section-margin">
+        <p class="eu-scisiamo-small-section-title small-tilt brand-red-text">Azienda <span></span></p>
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-8">
                     <div class="azienda-top-area">
                         <h1 class="section-title azienda-top-title"><span class="red-text">WE protect</span>
                             Your <br> Business
@@ -179,125 +188,124 @@
             </div>
         </div>
         <div class="azienda-tabs-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="azienda-tabs-wrap">
-                            <ul class="nav nav-tabs" id="aziendaTab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="bregnano-tab" data-bs-toggle="tab"
-                                        data-bs-target="#bregnano" type="button" role="tab" aria-controls="bregnano"
-                                        aria-selected="true">Bregnano</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="cantù-tab" data-bs-toggle="tab" data-bs-target="#cantù"
-                                        type="button" role="tab" aria-controls="cantù"
-                                        aria-selected="false">Cantù</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="lomazzo-tab" data-bs-toggle="tab"
-                                        data-bs-target="#lomazzo" type="button" role="tab" aria-controls="lomazzo"
-                                        aria-selected="false">Lomazzo</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="cermenate-tab" data-bs-toggle="tab"
-                                        data-bs-target="#cermenate" type="button" role="tab" aria-controls="cermenate"
-                                        aria-selected="false">Cermenate</button>
-                                </li>
-                            </ul>
+            <div class="azienda-tabs-wrap">
+                <ul class="nav nav-tabs" id="aziendaTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="bregnano-tab" data-bs-toggle="tab"
+                            data-bs-target="#bregnano" type="button" role="tab" aria-controls="bregnano"
+                            aria-selected="true">Bregnano</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="cantù-tab" data-bs-toggle="tab" data-bs-target="#cantù"
+                            type="button" role="tab" aria-controls="cantù" aria-selected="false">Cantù</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="lomazzo-tab" data-bs-toggle="tab" data-bs-target="#lomazzo"
+                            type="button" role="tab" aria-controls="lomazzo" aria-selected="false">Lomazzo</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="cermenate-tab" data-bs-toggle="tab" data-bs-target="#cermenate"
+                            type="button" role="tab" aria-controls="cermenate" aria-selected="false">Cermenate</button>
+                    </li>
+                </ul>
 
-                            <div class="tab-content" id="aziendaTab">
-                                <div class="tab-pane fade show active" id="bregnano" role="tabpanel"
-                                    aria-labelledby="bregnano-tab">
-                                    <div class="azienda-single-slider first-block">
-                                        <h2>Cantù</h2>
-                                        <p>Operativo dal 20049 linee produttive</p>
-                                    </div>
+                <div class="tab-content" id="aziendaTab">
+                    <div class="tab-pane fade show active" id="bregnano" role="tabpanel" aria-labelledby="bregnano-tab">
+                        <div class="zienda-single-tab-content-wrap">
+                            <div class="azienda-single-slider first-block">
+                                <h2>Cantù</h2>
+                                <p>Operativo dal 20049 linee produttive</p>
+                            </div>
 
-                                    <div class="azienda-single-slider second-block">
-                                        <ul>
-                                            <li>Produzioni attive:</li>
-                                            <li>4 Casemaker (1 mini-line, 3 medium-line)</li>
-                                            <li>1 fustellatore rotativo con stampa HD in 5 colori</li>
-                                            <li>1 fustellatrice piana</li>
-                                            <li>1 macchina piega e incolla</li>
-                                            <li>1 macchina stampa bianco e volta a 3 colori</li>
-                                            <li>1 macchina a doppia testa</li>
-                                            <li>13.000 mq di spazio al coperto</li>
-                                            <li>20.000 mq di spazio esterno</li>
-                                            <li>12 bilici in entrata e 12 in uscita, mediamente, ogni giorno</li>
-                                            <li>200 KPW di energia prodotti dall’impianto fotovoltaico.</li>
-                                        </ul>
-                                    </div>
+                            <div class="azienda-single-slider second-block">
+                                <ul>
+                                    <li>Produzioni attive:</li>
+                                    <li>4 Casemaker (1 mini-line, 3 medium-line)</li>
+                                    <li>1 fustellatore rotativo con stampa HD in 5 colori</li>
+                                    <li>1 fustellatrice piana</li>
+                                    <li>1 macchina piega e incolla</li>
+                                    <li>1 macchina stampa bianco e volta a 3 colori</li>
+                                    <li>1 macchina a doppia testa</li>
+                                    <li>13.000 mq di spazio al coperto</li>
+                                    <li>20.000 mq di spazio esterno</li>
+                                    <li>12 bilici in entrata e 12 in uscita, mediamente, ogni giorno</li>
+                                    <li>200 KPW di energia prodotti dall’impianto fotovoltaico.</li>
+                                </ul>
+                            </div>
+                        </div>
 
-                                </div>
-                                <div class="tab-pane fade" id="cantù" role="tabpanel" aria-labelledby="cantù-tab">
-                                    <div class="azienda-single-slider first-block">
-                                        <h2>Cantù</h2>
-                                        <p>Operativo dal 20049 linee produttive</p>
-                                    </div>
+                    </div>
+                    <div class="tab-pane fade" id="cantù" role="tabpanel" aria-labelledby="cantù-tab">
+                        <div class="zienda-single-tab-content-wrap">
+                            <div class="azienda-single-slider first-block">
 
-                                    <div class="azienda-single-slider second-block">
-                                        <ul>
-                                            <li>Produzioni attive:</li>
-                                            <li>4 Casemaker (1 mini-line, 3 medium-line)</li>
-                                            <li>1 fustellatore rotativo con stampa HD in 5 colori</li>
-                                            <li>1 fustellatrice piana</li>
-                                            <li>1 macchina piega e incolla</li>
-                                            <li>1 macchina stampa bianco e volta a 3 colori</li>
-                                            <li>1 macchina a doppia testa</li>
-                                            <li>13.000 mq di spazio al coperto</li>
-                                            <li>20.000 mq di spazio esterno</li>
-                                            <li>12 bilici in entrata e 12 in uscita, mediamente, ogni giorno</li>
-                                            <li>200 KPW di energia prodotti dall’impianto fotovoltaico.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="lomazzo" role="tabpanel" aria-labelledby="lomazzo-tab">
-                                    <div class="azienda-single-slider first-block">
-                                        <h2>Cantù</h2>
-                                        <p>Operativo dal 20049 linee produttive</p>
-                                    </div>
+                                <h2>Cantù</h2>
+                                <p>Operativo dal 20049 linee produttive</p>
+                            </div>
 
-                                    <div class="azienda-single-slider second-block">
-                                        <ul>
-                                            <li>Produzioni attive:</li>
-                                            <li>4 Casemaker (1 mini-line, 3 medium-line)</li>
-                                            <li>1 fustellatore rotativo con stampa HD in 5 colori</li>
-                                            <li>1 fustellatrice piana</li>
-                                            <li>1 macchina piega e incolla</li>
-                                            <li>1 macchina stampa bianco e volta a 3 colori</li>
-                                            <li>1 macchina a doppia testa</li>
-                                            <li>13.000 mq di spazio al coperto</li>
-                                            <li>20.000 mq di spazio esterno</li>
-                                            <li>12 bilici in entrata e 12 in uscita, mediamente, ogni giorno</li>
-                                            <li>200 KPW di energia prodotti dall’impianto fotovoltaico.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="cermenate" role="tabpanel"
-                                    aria-labelledby="cermenate-tab">
-                                    <div class="azienda-single-slider first-block">
-                                        <h2>Cantù</h2>
-                                        <p>Operativo dal 20049 linee produttive</p>
-                                    </div>
+                            <div class="azienda-single-slider second-block">
+                                <ul>
+                                    <li>Produzioni attive:</li>
+                                    <li>4 Casemaker (1 mini-line, 3 medium-line)</li>
+                                    <li>1 fustellatore rotativo con stampa HD in 5 colori</li>
+                                    <li>1 fustellatrice piana</li>
+                                    <li>1 macchina piega e incolla</li>
+                                    <li>1 macchina stampa bianco e volta a 3 colori</li>
+                                    <li>1 macchina a doppia testa</li>
+                                    <li>13.000 mq di spazio al coperto</li>
+                                    <li>20.000 mq di spazio esterno</li>
+                                    <li>12 bilici in entrata e 12 in uscita, mediamente, ogni giorno</li>
+                                    <li>200 KPW di energia prodotti dall’impianto fotovoltaico.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
 
-                                    <div class="azienda-single-slider second-block">
-                                        <ul>
-                                            <li>Produzioni attive:</li>
-                                            <li>4 Casemaker (1 mini-line, 3 medium-line)</li>
-                                            <li>1 fustellatore rotativo con stampa HD in 5 colori</li>
-                                            <li>1 fustellatrice piana</li>
-                                            <li>1 macchina piega e incolla</li>
-                                            <li>1 macchina stampa bianco e volta a 3 colori</li>
-                                            <li>1 macchina a doppia testa</li>
-                                            <li>13.000 mq di spazio al coperto</li>
-                                            <li>20.000 mq di spazio esterno</li>
-                                            <li>12 bilici in entrata e 12 in uscita, mediamente, ogni giorno</li>
-                                            <li>200 KPW di energia prodotti dall’impianto fotovoltaico.</li>
-                                        </ul>
-                                    </div>
-                                </div>
+                    <div class="tab-pane fade" id="lomazzo" role="tabpanel" aria-labelledby="lomazzo-tab">
+                        <div class="zienda-single-tab-content-wrap">
+                            <div class="azienda-single-slider first-block">
+                                <h2>Cantù</h2>
+                                <p>Operativo dal 20049 linee produttive</p>
+                            </div>
+
+                            <div class="azienda-single-slider second-block">
+                                <ul>
+                                    <li>Produzioni attive:</li>
+                                    <li>4 Casemaker (1 mini-line, 3 medium-line)</li>
+                                    <li>1 fustellatore rotativo con stampa HD in 5 colori</li>
+                                    <li>1 fustellatrice piana</li>
+                                    <li>1 macchina piega e incolla</li>
+                                    <li>1 macchina stampa bianco e volta a 3 colori</li>
+                                    <li>1 macchina a doppia testa</li>
+                                    <li>13.000 mq di spazio al coperto</li>
+                                    <li>20.000 mq di spazio esterno</li>
+                                    <li>12 bilici in entrata e 12 in uscita, mediamente, ogni giorno</li>
+                                    <li>200 KPW di energia prodotti dall’impianto fotovoltaico.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="cermenate" role="tabpanel" aria-labelledby="cermenate-tab">
+                        <div class="zienda-single-tab-content-wrap">
+                            <div class="azienda-single-slider first-block">
+                                <h2>Cantù</h2>
+                                <p>Operativo dal 20049 linee produttive</p>
+                            </div>
+
+                            <div class="azienda-single-slider second-block">
+                                <ul>
+                                    <li>Produzioni attive:</li>
+                                    <li>4 Casemaker (1 mini-line, 3 medium-line)</li>
+                                    <li>1 fustellatore rotativo con stampa HD in 5 colori</li>
+                                    <li>1 fustellatrice piana</li>
+                                    <li>1 macchina piega e incolla</li>
+                                    <li>1 macchina stampa bianco e volta a 3 colori</li>
+                                    <li>1 macchina a doppia testa</li>
+                                    <li>13.000 mq di spazio al coperto</li>
+                                    <li>20.000 mq di spazio esterno</li>
+                                    <li>12 bilici in entrata e 12 in uscita, mediamente, ogni giorno</li>
+                                    <li>200 KPW di energia prodotti dall’impianto fotovoltaico.</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -308,13 +316,15 @@
 
     <!-- azienda section ends -->
     <section class="sedi sedi-section section-padding section-margin">
+        <p id="sedi" class="eu-scisiamo-small-section-title small-tilt brand-red-text">SEDI<span></span></p>
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-8">
                     <div class="sedi-section-wrap">
                         <div class="section-top-title sedi-top-title">
-                            <h4 class="">Le nostre unità di Bregnano, Cantù, Lomazzo e Cermenate</h4>
-                            <h2 class="sedi-title"> <span>Euroscatola dispone di 4 stabilimenti </span> Per offrire a
+                            <p class="">Le nostre unità di Bregnano, Cantù, Lomazzo e Cermenate</p>
+                            <h2 class="sedi-title"> <span class="brand-red-text">Euroscatola dispone di 4 stabilimenti
+                                </span> Per offrire a
                                 tutti i clienti un
                                 servizio completo
                                 e puntuale al 100%
@@ -328,35 +338,38 @@
 
     <!-- sedi section starts  -->
     <section class="mission-vission mission-vission-section section-padding section-margin">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="mission-vission-section-wrap">
-                        <div class="section-top-title mission-vission-top-title">
-                            <div class="d-flex align-items-start">
 
-                                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
-                                    aria-orientation="vertical">
-                                    <button class="nav-link active" id="ee-mission-tab" data-bs-toggle="pill"
-                                        data-bs-target="#ee-mission" type="button" role="tab" aria-controls="ee-mission"
-                                        aria-selected="true">Mission</button>
-                                    <button class="nav-link" id="ee-vission-tab" data-bs-toggle="pill"
-                                        data-bs-target="#ee-vission" type="button" role="tab" aria-controls="ee-vission"
-                                        aria-selected="false">Vission</button>
-                                </div>
+        <div class="mission-vission-section-wrap d-flex align-items-start">
 
-                                <div class="tab-content" id="v-pills-tabContent">
-                                    <div class="tab-pane fade show active" id="ee-mission" role="tabpanel"
-                                        aria-labelledby="ee-mission-tab">
-                                        <h2>Mission</h2>
-                                    </div>
-                                    <div class="tab-pane fade" id="ee-vission" role="tabpanel"
-                                        aria-labelledby="ee-vission-tab">
-                                        <h2>Vission</h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <div class="nav flex-column nav-pills me-3 chi-siamo-mv-single first-half" id="v-pills-tab" role="tablist"
+                aria-orientation="vertical">
+                <button class="nav-link active" id="ee-mission-tab" data-bs-toggle="pill" data-bs-target="#ee-mission"
+                    type="button" role="tab" aria-controls="ee-mission" aria-selected="true">Mission</button>
+                <button class="nav-link" id="ee-vission-tab" data-bs-toggle="pill" data-bs-target="#ee-vission"
+                    type="button" role="tab" aria-controls="ee-vission" aria-selected="false">Vission</button>
+            </div>
+
+            <div class="tab-content chi-siamo-mv-single second-half" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="ee-mission" role="tabpanel" aria-labelledby="ee-mission-tab">
+                    <div class="mission-vission-single-tab">
+                        <p>Produrre imballaggi in cartone ondulato
+                            di ogni tipologia, in ogni quantità,
+                            in qualsiasi momento.
+                            Mettere il cliente al centro di ogni attenzione
+                            e attività. Promuovere la sostenibilità
+                            con utilizzo di cartone riciclato
+                            e proveniente da fonti certificate.</p>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="ee-vission" role="tabpanel" aria-labelledby="ee-vission-tab">
+                    <div class="mission-vission-single-tab">
+                        <p>Produrre imballaggi in cartone ondulato
+                            di ogni tipologia, in ogni quantità,
+                            in qualsiasi momento.
+                            Mettere il cliente al centro di ogni attenzione
+                            e attività. Promuovere la sostenibilità
+                            con utilizzo di cartone riciclato
+                            e proveniente da fonti certificate. 2</p>
                     </div>
                 </div>
             </div>
@@ -367,15 +380,16 @@
     <!-- mission and vission section starts  -->
 
     <section class="lesixp lesixp-section section-padding section-margin">
+        <p id="lexisp" class="eu-scisiamo-small-section-title small-tilt brand-red-text">L E 6 P<span></span></p>
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-8">
                     <div class="lesixp-section-wrap">
                         <div class="section-top-title lesixp-top-title">
-                            <h4 class="">Ogni tipologia di scatola dal 1973 </h4>
+                            <p class="">Ogni tipologia di scatola dal 1973 </p>
                             <h2 class="lesixp-title">Nella produzione di packaging
                                 in cartone ondulato, cosa conta veramente?
-                                <span> Ce lo dicono le 6P di Euroscatola.</span>
+                                <span class="brand-red-text"> Ce lo dicono le 6P di Euroscatola.</span>
                             </h2>
                         </div>
                     </div>
@@ -388,24 +402,42 @@
                     <div class="col-lg-12">
                         <div class="sesixp-list-wrap">
                             <ul>
-                                <li><span class="icon"></span>Personalizzazione <p class="description">Produrre tutti i
-                                        tipi di scatola,che vuol dire Personalizzazione </p>
+                                <li>
+                                    <i class="fa fa-box"></i>
+                                    <p class="title">Personalizzazione</p>
+                                    <p class="description">
+                                        Produrre tutti i tipi di scatola,che vuol dire Personalizzazione
+                                    </p>
                                 </li>
-                                <li><span class="icon"></span>Protezione <p class="description">Produrre tutti i tipi di
-                                        scatola,che vuol dire Personalizzazione </p>
+                                <li>
+                                    <i class="fa fa-box"></i>
+                                    <p class="title">Personalizzazione</p>
+                                    <p class="description">
+                                        Produrre tutti i tipi di scatola,che vuol dire Personalizzazione
+                                    </p>
                                 </li>
-                                <li><span class="icon"></span>Puntualità <p class="description">Produrre tutti i tipi di
-                                        scatola,che vuol dire Personalizzazione </p>
+                                <li>
+                                    <i class="fa fa-box"></i>
+                                    <p class="title">Personalizzazione</p>
+                                    <p class="description">
+                                        Produrre tutti i tipi di scatola,che vuol dire Personalizzazione
+                                    </p>
                                 </li>
-                                <li><span class="icon"></span>Precisione<p class="description">Produrre tutti i tipi di
-                                        scatola,che vuol dire Personalizzazione </p>
+                                <li>
+                                    <i class="fa fa-box"></i>
+                                    <p class="title">Personalizzazione</p>
+                                    <p class="description">
+                                        Produrre tutti i tipi di scatola,che vuol dire Personalizzazione
+                                    </p>
                                 </li>
-                                <li><span class="icon"></span>Prevenzione<p class="description">Produrre tutti i tipi di
-                                        scatola,che vuol dire Personalizzazione </p>
+                                <li>
+                                    <i class="fa fa-box"></i>
+                                    <p class="title">Personalizzazione</p>
+                                    <p class="description">
+                                        Produrre tutti i tipi di scatola,che vuol dire Personalizzazione
+                                    </p>
                                 </li>
-                                <li><span class="icon"></span>Persone<p class="description">Produrre tutti i tipi di
-                                        scatola,che vuol dire Personalizzazione </p>
-                                </li>
+                          
                             </ul>
                         </div>
                     </div>
@@ -443,7 +475,7 @@
 
                             <p class="button-title">scopri tutto il TEAM</p>
                             <div class="team-button button">
-                                <i class="fa fa-angle-right"></i>
+                                <i class="fa fa-long-arrow-right"></i>
                             </div>
                         </div>
                     </div>
@@ -474,20 +506,170 @@
             </div>
         </div>
     </section>
+
     <!-- persone and vission section starts  -->
 
     <!-- persone and vission section ends -->
 
     <!-- valori and vission section starts  -->
+    <section class="valori valori-section section-padding section-margin">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="valori-left valori-single-item">
+                        <h1>
+                            <span class="red-text .small-top-text">NOI ci crediamo</span>
+                            valori
+                        </h1>
+                        <p> Nei valori ci si identifica.
+                            Nel seguirli si cresce. Nel trasmetterli
+                            si condivide.Noi crediamo
+                            nei nostri valori e li perseguiamo
+                            con costanza e coerenza.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
 
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="valori-slider valori-slider-wrap">
+                        <div class="valori-slider-arrow">
+                            <i class="fa fa-long-arrow-right"></i>
+                        </div>
+                        <div class="valori-single-slider-item">
+                            <h4>SERIETA</h4>
+                            <p>
+                                Conduciamo il lavoro secondo criteri
+                                di professionalità e diligenza.
+                                Crediamo nell’etica del lavoro, e la
+                                diffondiamo nei rapporti con collaboratori,
+                                clienti, partner ed istituzioni.
+                            </p>
+                        </div>
+                        <div class="valori-single-slider-item">
+                            <h4>SERIETA</h4>
+                            <p>
+                                Conduciamo il lavoro secondo criteri
+                                di professionalità e diligenza.
+                                Crediamo nell’etica del lavoro, e la
+                                diffondiamo nei rapporti con collaboratori,
+                                clienti, partner ed istituzioni.
+                            </p>
+                        </div>
+                        <div class="valori-single-slider-item">
+                            <h4>SERIETA</h4>
+                            <p>
+                                Conduciamo il lavoro secondo criteri
+                                di professionalità e diligenza.
+                                Crediamo nell’etica del lavoro, e la
+                                diffondiamo nei rapporti con collaboratori,
+                                clienti, partner ed istituzioni.
+                            </p>
+                        </div>
+                        <div class="valori-single-slider-item">
+                            <h4>SERIETA</h4>
+                            <p>
+                                Conduciamo il lavoro secondo criteri
+                                di professionalità e diligenza.
+                                Crediamo nell’etica del lavoro, e la
+                                diffondiamo nei rapporti con collaboratori,
+                                clienti, partner ed istituzioni.
+                            </p>
+                        </div>
+                        <div class="valori-single-slider-item">
+                            <h4>SERIETA</h4>
+                            <p>
+                                Conduciamo il lavoro secondo criteri
+                                di professionalità e diligenza.
+                                Crediamo nell’etica del lavoro, e la
+                                diffondiamo nei rapporti con collaboratori,
+                                clienti, partner ed istituzioni.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="valori-timeline valori-timeline-slider">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="valori-timeline-single-item">
+                            <h2>
+                                <span class="valori-timeline-header-break">
+                                    Euroscatola
+                                </span>
+                                dal 1973 a oggi
+                            </h2>
+                            <p>
+                                Euroscatola nasce a Cantù nel 1973. Il fondatore,
+                                Silvio Cappelletti, ebbe l’intuizione di offrire un prodotto
+                                sempre utile alle aziende ma che facevano in pochi e, spesso, male.
+                                Presenziando per caso alla telefonata tra un suo amico
+                                imprenditore e il suo fornitore di imballaggi, si rese conto che,
+                                dietro quel settore, vi erano ampie opportunità.
+                                Tutto il resto è storia che, con un po’ di giusto orgoglio,
+                                vi raccontiamo in date.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- valori and vission section ends -->
 
-    <!-- main content area -->
+    <!-- numeri section starts  -->
+    <section class="numeri-section number section-padding-section-margin" id="numeri">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="numberi-section-title section-title">
+                        <h2>
+                            <span class="number-header-break">Le dimensioni di Euroscatola</span>
+                            offerte dai numeri
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="number-single-item">
+                        <h2>50</h2>
+                        <p>Anni di storia</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="number-single-item">
+                        <h2>4</h2>
+                        <p>Unità operative: 2 stabilimenti 2 magazzini logistici</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="number-single-item">
+                        <h2>16</h2>
+                        <p>Linee di
+                            produzioni
+                            globali
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="number-single-item">
+                        <h2>140</h2>
+                        <p>Dipendenti distribuiti tra le sedi</p>
+                    </div>
+                </div>
 
 
-
-    <!-- main content area -->
-
+            </div>
+        </div>
+    </section>
+    <!-- numeri section ends -->
 
 
     <footer>
