@@ -19,6 +19,29 @@ jQuery(document).ready(function ($) {
         prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-long-arrow-left' aria-hidden='true'></i></button>",
         nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-long-arrow-right' aria-hidden='true'></i></button>",
         nav: false,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                },
+            },
+            {
+                breakpoint: 1008,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                },
+            },
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
 
     });
 
@@ -30,26 +53,65 @@ jQuery(document).ready(function ($) {
         prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-long-arrow-left' aria-hidden='true'></i></button>",
         nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-long-arrow-right' aria-hidden='true'></i></button>",
         nav: false,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                },
+            },
+            {
+                breakpoint: 1008,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                },
+            },
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
 
     });
 
-    $('.valori-sliders').on('afterChange', function (event, slick, currentSlide) {
-        var testing = $(".slick-active").children().first();
-
-        // var testing = $(".slick-active").children().first().addClass('active');
-        // var testing = currentSlide.children().first().addClass('active');
-
-        console.log(currentSlide);
+    // Team member slider 
+    $('.team-member').slick({
+        rows: 2,
+        arrows: false,
+        infinite: true,
+        slidesToShow: 3,
+        autoplay: true,
+        nav: false,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                },
+            },
+            {
+                breakpoint: 1008,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                },
+            },
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
 
     });
-    //set active class to first slide
-    $('.slider-nav .slick-slide').eq(0).addClass('slick-active-awesome');
-
-
-    // $('.valori-sliders').on('afterChange', function () {
-    //     var dataId = $('.slick-current');
-    //     // console.log(dataId.children().first().addClass('active'));
-    //     console.log(dataId.children().addClass('active'));
-
-    // });
 });
+
+

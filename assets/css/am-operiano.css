@@ -1,0 +1,179 @@
+:root {
+    --brand-dim-gray-color: #e6dfd8;
+}
+
+.valori-single-item.vantaggi p {
+    font-size: 29px;
+    line-height: 35px;
+
+}
+
+.brand-dim-gray {
+    background-color: var(--brand-dim-gray-color);
+}
+
+.height-hundred-percent {
+    height: 100%;
+}
+
+.has-bg {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.height-eight-nighty {
+    min-height: 890px;
+}
+
+/* First section / circle slider  */
+.operiamo-cirle-single-item.first {
+    background-image: url(../images/Operiamo/operiamo-circle-slider-bg.png);
+    background-position: left center;
+}
+
+.operiamo-circle-slider .operiamo-cirle-single-item .box-wrap {
+    height: 780px;
+    width: 780px;
+    background: #c51d69;
+    border-radius: 50%;
+}
+
+.operiamo-cirle-single-item.second h2 {
+    font-size: 76px;
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+
+.operiamo-cirle-single-item.second p {
+    font-size: 29px;
+    font-family: 'IBM Plex Sans';
+}
+
+.operiamo-circle-slider {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.operiamo-cirle-single-item.first {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.operiamo-cirle-single-item .box-wrap {
+    position: relative;
+}
+
+.operiamo-cirle-single-item .box-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -75px;
+}
+
+.operiamo-cirle-single-item.second {
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.operiamo-cirle-single-item.second>* {
+    width: 50%;
+    margin-left: 25%;
+}
+
+
+/* first section | slider bottom area  */
+
+section.header-slider-bottom-area .single-slider-bottom-item p {
+    font-size: 23px;
+    font-family: 'Roboto';
+}
+
+section.header-slider-bottom-area .single-slider-bottom-item.plain-text p {
+    font-size: 16px;
+    font-family: 'IBM Plex Sans';
+}
+
+section.header-slider-bottom-area .single-slider-bottom-item.plain-text {
+    display: flex;
+    min-height: 100%;
+    align-items: end;
+}
+
+section.header-slider-bottom-area .single-slider-bottom-item h2 {
+    font-size: 55px;
+    font-weight: 300;
+    margin-top: 20px;
+    font-family: 'IBM Plex Sans';
+
+}
+
+section.header-slider-bottom-area .single-slider-bottom-item h2 span {
+    font-weight: 700;
+}
+
+
+/* Workflow  */
+
+.operiamo-wrokflow .single-operiamo-item h4,
+.operiamo-wrokflow .single-operiamo-item h2 {
+    font-size: 40px;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+.operiamo-wrokflow .operiamo-heading-two {
+    font-size: 75px;
+    margin-bottom: 50px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    line-height: 70px;
+}
+
+
+.operiamo-wrokflow .operiamo-heading-two span {
+    display: block;
+    color: var(--brand-red);
+}
+
+.operiamo-wrokflow .single-operiamo-item ul{
+    margin-top: 20px;
+}
+.operiamo-wrokflow .single-operiamo-item ul li {
+    list-style: none;
+    position: relative;
+    padding-left: 50px;
+    font-family: 'Roboto';
+    margin-bottom: 20px;
+}
+
+.operiamo-wrokflow .single-operiamo-item.first {
+    background: #f5f1ed;
+}
+
+.operiamo-wrokflow .single-operiamo-item.second {
+    background: #dbdddb;
+}
+
+.operiamo-wrokflow .single-operiamo-item {
+    padding: 100px 20px 30px 20px;
+}
+
+.operiamo-wrokflow .single-operiamo-item ul li .number {
+    position: absolute;
+    left: 0;
+    border: 1px solid;
+    width: 38px;
+    height: 38px;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+    top: -3px;
+}
+
+.lesixp-list-item-section.operiamo {
+    background-image: url(../images/Operiamo/operiamo-eye-bg.png);
+}
