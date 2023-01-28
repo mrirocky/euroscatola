@@ -33,7 +33,7 @@
 }
 
 .section-nav {
-    background: #ddd;
+    background: #f3f3f3;
 }
 
 .chi-siamo-nav-wrap ul li {
@@ -47,11 +47,17 @@
     position: relative;
     color: #000;
     font-family: var(--brand-font-family);
+    font-size: 18px;
+    font-weight: normal;
 }
 
 .chi-siamo-nav-wrap ul li a:hover,
 .chi-siamo-nav-wrap ul li a:active {
     color: rgb(223, 0, 103);
+}
+
+.chi-siamo-nav-wrap ul li:last-child a:after {
+    content: none;
 }
 
 .section-top-title {
@@ -83,7 +89,8 @@
     font-weight: bold;
     text-transform: uppercase;
     line-height: 190px;
-    margin-bottom: 25px;
+    margin-bottom: 60px;
+
 }
 
 .azienda-top-area .azienda-top-title span {
@@ -91,6 +98,7 @@
     font-weight: normal;
     color: rgb(223, 0, 103);
     font-size: 40%;
+    margin-bottom: -40px;
 }
 
 
@@ -171,6 +179,9 @@
 
 .azienda-tabs-wrap .tab-content .tab-pane {
     height: 870px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 .azienda-tabs-wrap .tab-content #bregnano {
@@ -190,17 +201,27 @@
 
 .zienda-single-tab-content-wrap .azienda-single-slider.second-block ul li {
     list-style: none;
-    font-weight: 200;
+    font-weight: normal;
+    font-size: 20px;
+    font-family: var(--brand-font-family);
+
+
 }
 
 .zienda-single-tab-content-wrap .azienda-single-slider h2 {
     margin-bottom: 20px;
+    font-size: 52px;
+    font-family: var(--brand-font-family);
+    margin-bottom: 50px;
 }
 
 .zienda-single-tab-content-wrap .azienda-single-slider p {
     color: #fff;
-    font-size: 22px;
-    font-weight: 300;
+    font-size: 32px;
+    font-weight: normal;
+    font-family: var(--brand-font-family);
+    line-height: 32px;
+
 }
 
 .zienda-single-tab-content-wrap .azienda-single-slider.first-block {
@@ -240,9 +261,20 @@ section {
 
 .sedi-section-wrap h2,
 .lesixp-section h2 {
-    font-size: 45px;
+    font-size: 55px;
+    /* font-family: 'Robot'; */
     font-family: var(--brand-font-family);
     font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 30px;
+
+}
+
+.sedi-top-title p {
+    font-size: 18px;
+    font-weight: normal;
+    font-family: 'Roboto';
+    text-transform: uppercase;
 }
 
 .sedi-section-wrap h2 span,
@@ -251,6 +283,23 @@ section {
 
 }
 
+.sedi-section-wrap p {
+    font-size: 18px;
+}
+
+.lesixp-section-wrap p {
+    font-size: 18px;
+    font-weight: normal;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+}
+
+.lesixp-section-wrap h2 {
+    font-family: 'Roboto';
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
 
 p.eu-scisiamo-small-section-title.small-tilt {
     top: 65px;
@@ -271,6 +320,7 @@ p.eu-scisiamo-small-section-title.small-tilt {
 
 .mission-vission-section .nav button {
     width: 300px;
+    text-transform: uppercase;
 }
 
 .chi-siamo-mv-single {
@@ -292,7 +342,6 @@ p.eu-scisiamo-small-section-title.small-tilt {
 .chi-siamo-mv-single.first-half button.active {
     font-size: 90px;
     text-transform: uppercase;
-    font-weight: 300;
     position: relative;
     text-align: right;
     margin-right: 306px;
@@ -303,6 +352,8 @@ p.eu-scisiamo-small-section-title.small-tilt {
     text-align: right;
     margin-bottom: 50px;
     font-size: 30px;
+    font-family: 'Roboto';
+    font-weight: 200;
 }
 
 .chi-siamo-mv-single.first-half button.active:after {
@@ -330,14 +381,18 @@ p.eu-scisiamo-small-section-title.small-tilt {
     justify-content: initial;
     align-items: center;
     background-image: url(../images/chi-siamo/mission-vission-bg.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: bottom center;
+}
+
+.chi-siamo-mv-single.second-half .tab-pane .mission-vission-single-tab {
+    margin-bottom: 200px;
+    margin-left: 100px;
 }
 
 .chi-siamo-mv-single.second-half .mission-vission-single-tab p {
     width: 380px;
-    margin-left: 100px;
     font-family: 'IBM Plex Sans';
     font-size: 18px;
 }
@@ -374,6 +429,21 @@ p.eu-scisiamo-small-section-title.small-tilt {
     padding-bottom: 30px;
     align-items: center;
     cursor: pointer;
+}
+.lesixp-list-item-section .sesixp-list-wrap ul li:last-child {
+    border: none;
+}
+
+.lesixp-list-item-section .sesixp-list-wrap ul li img.active {
+    display: none;
+}
+
+.lesixp-list-item-section .sesixp-list-wrap ul li.show img.active {
+    display: block;
+}
+
+.lesixp-list-item-section .sesixp-list-wrap ul li.show img {
+    display: none;
 }
 
 .lesixp-list-item-section .sesixp-list-wrap ul li p.description {
@@ -422,7 +492,7 @@ p.eu-scisiamo-small-section-title.small-tilt {
     position: absolute;
     height: 4px;
     width: 285px;
-    background: red;
+    background: var(--brand-red);
     bottom: 0;
 }
 

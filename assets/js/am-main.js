@@ -6,7 +6,9 @@ jQuery(document).ready(function ($) {
             var clickedEle = document.querySelector('ul li.show');
             if (clickedEle != null)
                 clickedEle.classList.remove('show');
-            this.classList.add('show');
+                // this.previousElementSibling.style.borderBottom = '1px solid';
+                this.classList.add('show');
+                this.previousElementSibling.style.border = 'none';
 
         })
     });
