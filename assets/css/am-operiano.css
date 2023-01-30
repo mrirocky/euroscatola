@@ -139,9 +139,10 @@ section.header-slider-bottom-area .single-slider-bottom-item h2 span {
     color: var(--brand-red);
 }
 
-.operiamo-wrokflow .single-operiamo-item ul{
+.operiamo-wrokflow .single-operiamo-item ul {
     margin-top: 20px;
 }
+
 .operiamo-wrokflow .single-operiamo-item ul li {
     list-style: none;
     position: relative;
@@ -176,4 +177,136 @@ section.header-slider-bottom-area .single-slider-bottom-item h2 span {
 
 .lesixp-list-item-section.operiamo {
     background-image: url(../images/Operiamo/operiamo-eye-bg.png);
+}
+
+/* divisioni section  */
+section.divisioni .section-title h2 {
+    font-size: 55px;
+    text-transform: uppercase;
+    padding-bottom: 60px;
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+
+section.divisioni .section-title h2 span {
+    display: block;
+    color: var(--brand-red);
+}
+
+.divisioni-single-desc-item {
+    font-family: var(--brand-font);
+}
+
+.divisioni-single-desc-item.left p {
+    font-size: 23px;
+}
+
+.divisioni-description {
+    margin-bottom: 30px;
+}
+
+.divisioni-gallery {
+    padding: 30px 0;
+}
+
+.divisioni-gallery .divisioni-text-wrap ul {
+    padding: 90px 185px;
+}
+
+.divisioni-gallery .divisioni-text-wrap {
+    position: relative;
+    background-image: url(../images/Operiamo/divisioni-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: 99;
+    min-height: 1060px;
+    transition: .5s ease-in-out;
+}
+
+.divisioni-gallery .divisioni-text-wrap.first {
+    background-image: url(https://images.unsplash.com/photo-1675047373408-2d64c81c0da6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80);
+}
+
+.divisioni-gallery .divisioni-text-wrap.second {
+    background-image: url(https://images.unsplash.com/photo-1516937941344-00b4e0337589?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+}
+
+.divisioni-gallery .divisioni-text-wrap.third {
+    background-image: url(https://images.unsplash.com/photo-1588011930968-eadac80e6a5a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80);
+}
+
+.divisioni-gallery .divisioni-text-wrap.fourth {
+    background-image: url(https://images.unsplash.com/photo-1496247749665-49cf5b1022e9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80);
+}
+
+.divisioni-gallery .divisioni-text-wrap.fifth {
+    background-image: url(https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+}
+
+.divisioni-gallery .divisioni-text-wrap.sixth {
+    background-image: url(https://images.unsplash.com/photo-1618090584176-7132b9911657?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80);
+}
+
+
+.divisioni-gallery .divisioni-text-wrap ul li {
+    list-style: none;
+    font-size: 40px;
+    font-family: var(--brand-font-family);
+    font-weight: 300;
+    margin-bottom: 30px;
+    width: max-content;
+    color: #fff;
+}
+
+.divisioni-gallery .divisioni-text-wrap ul li p {
+    font-family: var(--brand-font-family);
+    width: 600px;
+    font-weight: 200;
+    padding-left: 120px;
+    margin-top: 25px;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: .5s;
+    height: 0;
+    color: #fff;
+}
+
+.divisioni-gallery .divisioni-text-wrap ul li span {
+    position: relative;
+}
+
+.divisioni-gallery .divisioni-text-wrap ul li:hover>p {
+    height: auto;
+    transform: scaleY(1);
+}
+
+.divisioni-gallery .divisioni-text-wrap ul li span:after {
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background: var(--brand-red);
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.divisioni-gallery .divisioni-text-wrap ul li:hover>span:after {
+    opacity: 1;
+}
+
+.divisioni-gallery .divisioni-text-wrap ul li:hover {
+    font-weight: 500;
+}
+
+.divisioni-gallery .divisioni-text-wrap:after {
+    content: '';
+    background: #000;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: .4;
+    z-index: -1;
 }

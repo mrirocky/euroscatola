@@ -81,7 +81,7 @@ jQuery(document).ready(function ($) {
 
     });
 
-  var $valTimelineslideContainter = $('.valori-timeline-single-item'),
+    var $valTimelineslideContainter = $('.valori-timeline-single-item'),
         $valTimeLineslider = $valTimelineslideContainter.slick({
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -89,7 +89,7 @@ jQuery(document).ready(function ($) {
             infinite: true,
             speed: 1000,
             autoplay: false,
-            navigation:true,
+            navigation: true,
             prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-long-arrow-left' aria-hidden='true'></i></button>",
             // nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-long-arrow-right' aria-hidden='true'></i></button>",
             nextArrow: "<button type='button' class='slick-next pull-right'><img src='assets/images/arrow-white.png'></button>",
@@ -155,6 +155,24 @@ jQuery(document).ready(function ($) {
         ],
 
     });
+
+    // Come operiamo 
+
+    var divisioniLi = $(".divisioni-gallery .divisioni-text-wrap ul li");
+
+    divisioniLi.hover(function (e) {
+        var Liclass = $(this).attr('class');
+
+        $(".divisioni-gallery .divisioni-text-wrap").addClass(Liclass);
+    },
+    function (e) {
+        var Liclass = $(this).attr('class');
+
+        $(".divisioni-gallery .divisioni-text-wrap").removeClass(Liclass);
+    }
+    );
+
+
 });
 
 
