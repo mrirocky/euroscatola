@@ -406,12 +406,13 @@ p.eu-scisiamo-small-section-title.small-tilt {
 /* LP six  */
 
 .lesixp-list-item-section {
-    height: 800px;
+    min-height: 800px;
     background-color: #ddd;
     background-image: url(../images/chi-siamo/lpe_six_bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
 
 .lesixp-list-item-section .sesixp-list-wrap ul li p {
@@ -430,6 +431,7 @@ p.eu-scisiamo-small-section-title.small-tilt {
     align-items: center;
     cursor: pointer;
 }
+
 .lesixp-list-item-section .sesixp-list-wrap ul li:last-child {
     border: none;
 }
@@ -478,7 +480,19 @@ p.eu-scisiamo-small-section-title.small-tilt {
 .lesixp-list-item-section .sesixp-list-wrap ul li.show {
     padding-left: 100px;
     border: none;
+    /* background: rgba(0, 0, 0, 0.4); */
+    z-index: 1;
+}
+
+.lesixp-list-item-section .sesixp-list-wrap ul li.show:before {
     background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 130%;
+    top: 0;
+    left: -15%;
+    z-index: -1;
 }
 
 .lesixp-list-item-section .sesixp-list-wrap ul li.show p.title {
@@ -527,7 +541,7 @@ p.eu-scisiamo-small-section-title.small-tilt {
     bottom: -266px;
 }
 
-.persone-title {
+.persone-top-title h2 {
     font-size: 131px;
     line-height: 125px;
     text-transform: uppercase;
@@ -538,7 +552,7 @@ p.eu-scisiamo-small-section-title.small-tilt {
 
 }
 
-.persone-title span {
+.persone-top-title h2 span {
     color: #ca1868;
 }
 
@@ -689,6 +703,7 @@ p.eu-scisiamo-small-section-title.small-tilt {
 .valori-slider {
     left: 0px;
     position: relative;
+    margin-right: 14px;
 }
 
 .valori-slider-arrow svg {
@@ -778,18 +793,34 @@ p.eu-scisiamo-small-section-title.small-tilt {
 
 }
 
-.valori-timeline-container {
+/* .valori-timeline-container {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
 .valori-timeline-single-item {
-    /* max-width: 992px; */
+    width: 50%;
     min-height: 959px;
-    background-color: #596f63;
-    /* padding: 140px; */
+
 }
+
+.valori-timeline-single-item .val-timeline-slider-container {
+    min-height: 959px;
+    background-color: #333;
+    padding: 140px;
+    padding-left: 190px;
+    padding-top: 214px;
+}
+
+.valori-timeline-single-item .val-timeline-slider-container:nth-child(3) {
+    background: blueviolet;
+}
+
+.valori-timeline-single-item .val-timeline-slider-container:nth-child(2) {
+    background: #596f63;
+}
+
 
 .valori-timeline-single-item h2 {
     font-size: 55px;
@@ -813,7 +844,7 @@ p.eu-scisiamo-small-section-title.small-tilt {
     color: #f3f1ee;
     font-weight: 400;
     font-family: "IBM Plex Sans";
-    margin-top: 200px;
+    margin-top: 160px;
 }
 
 .valori-img-single-item {
@@ -829,10 +860,52 @@ p.eu-scisiamo-small-section-title.small-tilt {
 }
 
 .valori-img-single-item {
-    background-image: url(../images/home/home.png);
+    position: relative;
+}
+
+.valori-img-single-item.right {
+    position: relative;
+}
+
+
+
+.valori-timeline-container {
+    position: relative;
+}
+
+.valori-timeline-container:after {
+    position: absolute;
+    content: '';
+    background-color: rgba(89, 111, 99, 0.77);
+    height: 100%;
+    width: 50%;
+    right: 0;
+    background-image: url(../images/chi-siamo/valori-timeline-bg.jpg);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    background-position: 0 0;
+    z-index: 1;
+    background-blend-mode: multiply;
+    top: 0;
+}
+
+.valori-timeline-container .slick-arrow {
+    display: none !important;
+}
+
+.valori-timeline-container .slick-next.slick-arrow {
+    display: block !important;
+    position: absolute;
+    right: -90%;
+    z-index: 99;
+    bottom: 60px;
+    background: transparent;
+    border: 1px solid #fff;
+    height: 90px;
+    width: 90px;
+    color: #fff;
+    border-radius: 50%;
+    transform: rotate(90deg);
 }
 
 /* slick  */
@@ -843,7 +916,14 @@ p.eu-scisiamo-small-section-title.small-tilt {
 .valori-sliders {
     position: relative;
     margin-top: 8rem;
-    margin-left: 100px;
+    margin-left: 50px;
+
+}
+
+@media (min-width:1559px) {
+    .valori-sliders {
+        margin-left: 190px;
+    }
 }
 
 .valori-sliders .slick-next {
@@ -932,7 +1012,115 @@ p.eu-scisiamo-small-section-title.small-tilt {
     margin-bottom: 120px;
 }
 
+p.eu-scisiamo-small-section-title.more-left {
+    left: -45px;
+}
+
 /* responsive media query any devices   */
+
+@media only screen and (max-width: 1450px) {
+    .azienda-top-area .azienda-top-title {
+        font-size: 150px;
+        line-height: 125px;
+        margin-bottom: 60px;
+    }
+
+    .azienda-top-area .azienda-top-title span {
+        margin-bottom: -30px;
+    }
+
+    .azienda-section .eu-scisiamo-small-section-title {
+        left: -15px;
+    }
+
+    .azienda-top-area .azienda-subtitle {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .sedi-section-wrap h2,
+    .lesixp-section h2 {
+        font-size: 45px;
+    }
+
+    .valori-single-slider-item {
+        min-width: 325px;
+    }
+
+    .valori-single-info {
+        bottom: -198px;
+    }
+
+    p.eu-scisiamo-small-section-title.more-left {
+        left: -46px;
+    }
+
+    .chi-siamo-mv-single.first-half button.active {
+        font-size: 70px;
+    }
+
+    .chi-siamo-mv-single.first-half button.active:after {
+        bottom: -2px;
+        left: 110%;
+    }
+
+    .chi-siamo-mv-single.first-half button {
+        margin-right: 297px;
+    }
+
+    .persone-top-title {
+        bottom: -217px;
+    }
+
+    .persone-top-title h2 {
+        font-size: 100px;
+        line-height: 100px;
+    }
+
+    .valori-single-item h1 {
+        font-size: 150px;
+    }
+
+    .valori-single-item p {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .valori-single-slider-item {
+        height: auto;
+        min-height: 400px;
+
+    }
+
+    .valori-timeline-single-item .val-timeline-slider-container {
+        min-height: 700px;
+    }
+
+    .valori-timeline-single-item {
+        min-height: 700px;
+    }
+
+    .valori-timeline-single-item .val-timeline-slider-container {
+        padding-left: 55px;
+    }
+
+    .valori-timeline-single-item .val-timeline-slider-container {
+        padding-top: 120px;
+    }
+
+    .valori-timeline-single-item p {
+        margin-top: 100px;
+    }
+
+    .number-single-item h2 {
+        font-size: 150px;
+        line-height: 150px;
+    }
+
+
+
+}
+
 
 @media only screen and (max-width: 1399.98px) {
 
@@ -951,7 +1139,12 @@ p.eu-scisiamo-small-section-title.small-tilt {
     }
 
     .numeri-section p.eu-scisiamo-small-section-title.small-tilt {
-        left: -25px;
+        left: -50px;
+    }
+
+    .sedi-section .small-tilt,
+    .lesixp.lesixp-section .small-tilt {
+        left: 0 !important;
     }
 
     /* top menu  */
@@ -1000,6 +1193,117 @@ p.eu-scisiamo-small-section-title.small-tilt {
         line-height: 165px;
     }
 
+
+}
+
+@media only screen and (max-width: 1280px) {
+    .zienda-single-tab-content-wrap {
+        padding: 0 53px;
+    }
+
+    .azienda-top-area .azienda-top-title {
+        font-size: 120px;
+        line-height: 105px;
+    }
+
+    .azienda-top-area .azienda-top-title {
+        margin-bottom: 40px;
+    }
+
+    .azienda-top-area .azienda-subtitle {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .azienda-tabs-section .azienda-tabs-wrap ul.nav-tabs li button.active {
+        font-size: 30px;
+    }
+
+    .zienda-single-tab-content-wrap .azienda-single-slider p {
+        font-size: 25px;
+    }
+
+    .zienda-single-tab-content-wrap .azienda-single-slider h2 {
+        font-size: 40px;
+        margin-bottom: 35px;
+    }
+
+    .sedi-section-wrap h2,
+    .lesixp-section h2 {
+        font-size: 35px;
+    }
+
+    .chi-siamo-mv-single.first-half button.active {
+        font-size: 50px;
+    }
+
+    .chi-siamo-mv-single.first-half button.active:after {
+        bottom: 5px;
+
+    }
+
+    .chi-siamo-mv-single.first-half button {
+        margin-right: 317px;
+    }
+
+    .chi-siamo-mv-single.first-half button {
+        font-size: 25px;
+    }
+
+    .chi-siamo-mv-single.second-half .tab-pane .mission-vission-single-tab {
+        margin-left: 55px;
+    }
+
+    .chi-siamo-mv-single.second-half .mission-vission-single-tab p {
+        width: 310px;
+    }
+
+    .lesixp-list-item-section .sesixp-list-wrap ul li p {
+        font-size: 30px;
+    }
+
+    .lesixp-list-item-section .sesixp-list-wrap ul li img {
+        max-width: 50px;
+    }
+
+    .lesixp-list-item-section .sesixp-list-wrap ul li {
+        padding: 15px;
+    }
+
+    .persone-top-title h2 {
+        font-size: 70px;
+        line-height: 70px;
+        min-width: 50%;
+    }
+
+    .valori-single-item h1 {
+        font-size: 120px;
+        line-height: 120px;
+        margin-bottom: 20px;
+    }
+
+    .valori-single-item p {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .number-single-item h2 {
+        font-size: 120px;
+        line-height: 130px;
+    }
+
+    .number-single-item p {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .mission-vission-section {
+        height: 615px;
+    }
+
+    .azienda-tabs-wrap .tab-content .tab-pane {
+        height: 550px;
+    }
 
 }
 
@@ -1096,8 +1400,179 @@ p.eu-scisiamo-small-section-title.small-tilt {
     }
 }
 
+@media only screen and (max-width: 1024px) {
+    .azienda-top-area .azienda-top-title {
+        font-size: 80px;
+        line-height: 65px;
+    }
+
+    .azienda-top-area .azienda-subtitle {
+        font-size: 25px;
+        line-height: 26px;
+    }
+
+    .azienda-top-area .azienda-top-title {
+        margin-bottom: 25px;
+    }
+
+    .azienda-top-area .azienda-top-title span {
+        margin-bottom: -15px;
+    }
+
+    .azienda-top-area {
+        margin-bottom: 0px;
+    }
+
+    .zienda-single-tab-content-wrap .azienda-single-slider.second-block ul li {
+        font-size: 18px;
+    }
+
+    .zienda-single-tab-content-wrap .azienda-single-slider h2 {
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+
+    .azienda-tabs-section .azienda-tabs-wrap ul.nav-tabs li button.active {
+        font-size: 25px;
+    }
+
+    .zienda-single-tab-content-wrap .azienda-single-slider p {
+        font-size: 22px;
+    }
+
+    .azienda-tabs-wrap .tab-content .tab-pane {
+        min-height: 530px;
+
+    }
+
+    .sedi-section-wrap h2,
+    .lesixp-section h2 {
+        font-size: 30px;
+    }
+
+    .chi-siamo-mv-single.second-half .tab-pane .mission-vission-single-tab {
+        margin-bottom: 0;
+    }
+
+    .chi-siamo-mv-single.first-half button.active {
+        font-size: 50px;
+    }
+
+    .lesixp-list-item-section {
+        min-height: 618px;
+    }
+
+    .sesixp-list-wrap {
+        padding-top: 50px;
+    }
+
+    .persone-top-title h2 {
+        font-size: 50px;
+        line-height: 50px;
+        min-width: 30%;
+    }
+
+    .persone-top-title {
+        bottom: -58px;
+    }
+
+    .team-members {
+        margin-top: 115px;
+    }
+
+    .valori-single-item h1 {
+        font-size: 80px;
+        line-height: 85px;
+    }
+
+    .valori-single-item p {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .valori-single-item h1 {
+        margin-bottom: 10px;
+    }
+
+    p.eu-scisiamo-small-section-title.more-left {
+        left: -55px;
+    }
+
+    .numeri-section p.eu-scisiamo-small-section-title.small-tilt {
+        left: -52px;
+    }
+
+    .valori-timeline-single-item p {
+        margin-top: 27px;
+    }
+
+    .valori-timeline-single-item .val-timeline-slider-container {
+        padding-left: 45px;
+    }
+
+    .valori-timeline-single-item .val-timeline-slider-container {
+        padding-top: 50px;
+    }
+
+    .valori-timeline-single-item .val-timeline-slider-container {
+        min-height: 500px;
+    }
+
+    .valori-timeline-single-item {
+        min-height: 500px;
+    }
+
+    .valori-timeline-single-item .val-timeline-slider-container {
+        padding: 50px;
+    }
+
+    .valori-timeline-single-item h2 {
+        font-size: 40px;
+    }
+
+    .valori-timeline-single-item h2 span {
+        font-size: 40px;
+
+    }
+
+    .numberi-section-title h2 {
+        font-size: 40px;
+    }
+
+    .numberi-section-title h2 span {
+        font-size: 40px;
+    }
+
+    .number-single-item h2 {
+        font-size: 80px;
+        line-height: 80px;
+    }
+
+    .chi-siamo-number-slider .slick-next {
+        height: 60px;
+        width: 60px;
+        font-size: 20px;
+    }
+
+    .valori-timeline-container .slick-next.slick-arrow {
+
+        height: 60px;
+        width: 60px;
+    }
+
+    .valori-single-slider-item {
+        min-width: 285px;
+    }
+}
+
+
+
 
 @media only screen and (max-width: 991.98px) {
+
+    p.eu-scisiamo-small-section-title.small-tilt {
+        display: none !important;
+    }
 
     .azienda-top-area .azienda-top-title {
         font-size: 100px;
@@ -1128,7 +1603,7 @@ p.eu-scisiamo-small-section-title.small-tilt {
     }
 
     .azienda-tabs-wrap .tab-content .tab-pane {
-        height: 600px;
+        min-height: 600px;
     }
 
     .mission-vission-section {
@@ -1228,6 +1703,53 @@ p.eu-scisiamo-small-section-title.small-tilt {
         margin-top: -120px;
         font-size: 20px;
     }
+
+
+    .persone-top-title {
+        bottom: -109px;
+    }
+
+    .chi-siamo-mv-single.first-half button {
+        margin-right: 232px;
+    }
+
+    .chi-siamo-mv-single.first-half {
+        height: 320px;
+    }
+
+    .chi-siamo-mv-single.second-half .tab-pane.active {
+        background-image: none;
+        justify-content: center;
+    }
+
+    .team-member-title span {
+        font-size: 50px;
+        line-height: 65px;
+        display: block;
+    }
+
+    .team-member-title {
+        font-size: 50px;
+    }
+
+    .valori-single-slider-item {
+        min-width: 370px;
+        max-width: 390px;
+    }
+
+    .valori-single-info {
+        bottom: -172px;
+    }
+
+    .valori-sliders .slick-next {
+        height: 60px;
+        width: 60px;
+        font-size: 20px;
+    }
+
+    .chi-siamo-nav {
+        display: none;
+    }
 }
 
 
@@ -1308,7 +1830,7 @@ p.eu-scisiamo-small-section-title.small-tilt {
     }
 
     .azienda-tabs-wrap .tab-content .tab-pane {
-        height: 550px;
+        min-height: 550px;
     }
 
     .zienda-single-tab-content-wrap .azienda-single-slider.first-block {
@@ -1513,6 +2035,61 @@ p.eu-scisiamo-small-section-title.small-tilt {
         width: 50px;
         font-size: 20px;
     }
+
+    .lesixp-list-item-section .sesixp-list-wrap ul li img {
+        position: absolute;
+        left: 0;
+    }
+
+    .lesixp-list-item-section .sesixp-list-wrap ul li {
+        padding-left: 60px;
+    }
+
+    .valori-single-slider-item {
+        max-width: unset;
+    }
+
+    .valori-slider {
+        margin: 0 15px;
+
+    }
+
+    .valori-single-slider-item {
+        margin-right: 0;
+    }
+
+    .valori-timeline-single-item {
+        width: 100%;
+    }
+
+    .valori-timeline-container:after {
+        /* content: none; */
+        width: 100%;
+        top: 100%;
+    }
+
+    .valori-timeline-container .slick-next.slick-arrow {
+        right: 50px;
+        bottom: -110px;
+    }
+
+    section#numeri {
+        margin-top: 415px;
+    }
+
+    .section-padding {
+        padding: 25px 0;
+    }
+
+    .chi-siamo-mv-single.second-half .tab-pane .mission-vission-single-tab {
+        margin-bottom: 200px;
+        margin-left: 100px;
+        width: 100%;
+    }
+
+    .zienda-single-tab-content-wrap .azienda-single-slider.first-block {
+        padding-top: 20px;
+    }
 }
 
 
@@ -1521,11 +2098,16 @@ p.eu-scisiamo-small-section-title.small-tilt {
         margin-left: 0;
     }
 
+    .sedi-section-wrap h2,
+    .lesixp-section h2 {
+        font-size: 22px;
+    }
+
     .azienda-top-area h1.azienda-top-title span {
         font-size: 25%;
     }
 
     .azienda-tabs-wrap .tab-content .tab-pane {
-        height: 500px;
+        min-height: 500px;
     }
 }

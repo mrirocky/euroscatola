@@ -6,9 +6,9 @@ jQuery(document).ready(function ($) {
             var clickedEle = document.querySelector('ul li.show');
             if (clickedEle != null)
                 clickedEle.classList.remove('show');
-                // this.previousElementSibling.style.borderBottom = '1px solid';
-                this.classList.add('show');
-                this.previousElementSibling.style.border = 'none';
+            // this.previousElementSibling.style.borderBottom = '1px solid';
+            this.classList.add('show');
+            this.previousElementSibling.style.border = 'none';
 
         })
     });
@@ -17,7 +17,7 @@ jQuery(document).ready(function ($) {
     $('.valori-sliders').slick({
         infinite: true,
         slidesToShow: 4,
-        autoplay: true,
+        // autoplay: true,
         prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-long-arrow-left' aria-hidden='true'></i></button>",
         nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-long-arrow-right' aria-hidden='true'></i></button>",
         nav: false,
@@ -80,6 +80,47 @@ jQuery(document).ready(function ($) {
         ],
 
     });
+
+  var $valTimelineslideContainter = $('.valori-timeline-single-item'),
+        $valTimeLineslider = $valTimelineslideContainter.slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            infinite: true,
+            speed: 1000,
+            autoplay: false,
+            navigation:true,
+            prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-long-arrow-left' aria-hidden='true'></i></button>",
+            // nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-long-arrow-right' aria-hidden='true'></i></button>",
+            nextArrow: "<button type='button' class='slick-next pull-right'><img src='assets/images/arrow-white.png'></button>",
+        });
+
+    // var $valTimelineslideContainter = $('.val-timeline-slider-container'),
+    //     $valTimeLineslider = $valTimelineslideContainter.slick({
+    //         slidesToShow: 1,
+    //         slidesToScroll: 1,
+    //         arrows: true,
+    //         infinite: true,
+    //         speed: 1000,
+    //         autoplay: true,
+    //         autoplaySpeed: 4000,
+    //         fade: true,
+    //     });
+
+    //     colorSettings = {
+    //         section: ['blue', 'yellow', 'red']
+    //     };
+
+    //     changeColors = function (slide) {
+    //         $valTimelineslideContainter.parentsUntil('.valori-timeline-single-item').css({ backgroundColor: 'colorSettings.section[slide]' });
+    //     };
+
+    // // Initial call to set color
+    // changeColors(0);
+
+    // $valTimeLineslider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+    //     changeColors(nextSlide);
+    // });
 
     // Team member slider 
     $('.team-member').slick({
