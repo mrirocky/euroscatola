@@ -197,6 +197,11 @@ section.divisioni .section-title h2 span {
     font-family: var(--brand-font);
 }
 
+.divisioni-single-desc-item ul li {
+    font-family: var(--brand-font-family);
+    list-style: none;
+}
+
 .divisioni-single-desc-item.left p {
     font-size: 23px;
 }
@@ -310,3 +315,555 @@ section.divisioni .section-title h2 span {
     opacity: .4;
     z-index: -1;
 }
+
+
+/* vantaggi section  */
+
+.vantaggi-section .valori-single-item h1 span:nth-child(2) {
+    font-size: 76px;
+    font-weight: 300;
+}
+
+.vantaggi-section .valori-single-item h1 {
+    margin-bottom: 70px;
+}
+
+.vantaggi-section .valori-single-item p {
+    font-family: var(--brand-font-family);
+    font-weight: 200;
+}
+
+.crescita-section .section-title {
+    width: 45%;
+    padding-left: 8%;
+}
+
+.crescita-section .section-title h1 {
+    font-size: 131px;
+    font-weight: 300;
+    line-height: 110px;
+    font-family: 'Roboto';
+}
+
+.crescita-section .section-title h1 span {
+    color: var(--brand-red);
+}
+
+.crescita-section .section-title .sub-title p {
+    font-family: var(--brand-font-family);
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.crescita-section .crescita-tabs {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-left: 9%;
+    min-height: 845px;
+    background: #e6dfd7;
+}
+
+.crescita-section .crescita-tabs .crescita-tab-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 35px;
+}
+
+.crescita-section .crescita-tabs .crescita-tab-left .crescita-number li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 20px 75px 20px 5px;
+    font-size: 35px;
+    font-family: var(--brand-font-family);
+    position: relative;
+    font-weight: 200;
+}
+
+.crescita-section .crescita-tabs .crescita-tab-left .crescita-number li:before {
+    content: '';
+    position: absolute;
+    background: #b5afa9;
+    height: 3px;
+    width: 100%;
+    top: -5px;
+    left: 0;
+}
+
+.crescita-section .crescita-tabs .crescita-tab-left h2 {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 40px;
+    max-width: 60%;
+    margin-bottom: 60px;
+}
+
+.crescita-section .crescita-tabs .crescita-tab-left .crescita-number li:after {
+    content: '';
+    position: absolute;
+    background: var(--brand-red);
+    height: 3px;
+    width: 100%;
+    top: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: .3s;
+}
+
+.crescita-section .crescita-tabs .crescita-tab-left .crescita-number li:hover:after {
+    transform: scaleX(1);
+}
+
+.crescita-section .crescita-tabs .crescita-tab-left .crescita-number li:hover {
+    font-weight: 400;
+}
+
+.crescita-section .crescita-tabs .crescita-tab-left p {
+    font-size: 29px;
+    font-family: var(--brand-font-family);
+    font-weight: 200;
+}
+
+.crescita-section .crescita-tabs .crescita-buttons {
+    margin-top: -42px;
+}
+
+.crescita-section .crescita-tabs .crescita-buttons button {
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    font-family: var(--brand-font-family);
+    font-weight: 500;
+    margin-right: 35px;
+}
+
+.crescita-section .crescita-tabs .crescita-buttons {
+    text-align: right;
+    position: absolute;
+    top: 0px;
+    right: 100px;
+}
+
+.crescita-section .crescita-tabs .crescita-buttons button.active {
+    font-size: 45px;
+    font-weight: 200;
+    border-bottom: 5px solid var(--brand-red);
+    padding-bottom: 6px;
+}
+
+.crescita-section .crescita-tabs .crescita-tab-right:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    opacity: .4;
+    z-index: -1;
+}
+
+.crescita-section .crescita-tabs .crescita-tab-right {
+    position: relative;
+    background-image: url(../images/Operiamo/crescita-tab.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.crescita-section .section-title {
+    margin-bottom: -319px;
+}
+
+.crescita-tabs .crescita-para-wrap {
+    min-height: 50px;
+}
+
+.crescita-section .crescita-tabs .crescita-tab-left p {
+    min-height: 50px;
+    /* opacity: 0;
+    visibility: hidden; */
+    display: none;
+}
+
+.crescita-section .crescita-tabs .crescita-tab-left p.active {
+    display: block;
+    /* opacity: 1;
+    visibility: visible; */
+}
+
+.chi-siamo-mv-single.second-half .tab-pane .mission-vission-single-tab ul li {
+    list-style: none;
+}
+
+
+/* sustainablity  */
+
+.sustainability-section .section-title p {
+    font-size: 18px;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+}
+
+.sustainability-section .section-title h2 {
+    font-family: var(--brand-font-family);
+    font-size: 55px;
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+.sustainability-section .section-title h2 span {
+    display: block;
+    font-weight: 200;
+}
+
+.operiamo-promo .team-bottom-title h1 {
+    font-size: 75px;
+    font-weight: 600;
+    line-height: 80px;
+    font-family: 'Roboto';
+    margin-bottom: 50px;
+}
+
+.operiamo-promo .team-bottom-title ul li {
+    font-size: 40px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    margin-bottom: 22px;
+    line-height: 45px;
+}
+
+.operiamo-promo {
+    padding-bottom: 100px;
+}
+
+/* certification tabs section  */
+
+.certificazioni-tab-section .nav button {
+    width: auto;
+    text-transform: uppercase;
+    margin-right: 330px;
+}
+
+.certificazioni-tab-section .chi-siamo-mv-single.first-half button.active {
+    line-height: 100px;
+    margin-right: 306px;
+    line-height: 100px;
+
+}
+
+.certificazioni-tab-section .chi-siamo-mv-single.first-half button.active:after {
+    bottom: 26px;
+    left: 100%;
+}
+
+.certificazioni-tab-section .chi-siamo-mv-single.second-half .tab-pane.active {
+    background-image: url(../images/Operiamo/operiamo-sustain-tab.jpg)
+}
+
+.certificazioni-section .sedi-section-wrap h1 {
+    font-size: 221px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    line-height: 98px;
+    margin-top: 50px;
+}
+
+.certificazioni-section .sedi-section-wrap h1 span {
+    font-weight: 200;
+    font-size: 76px;
+}
+
+/* very bottom section  */
+
+
+section.operiamo-bottom-section .operiamo-bottom h2 {
+    font-size: 23px;
+    font-family: var(--brand-font-family);
+    font-weight: 500;
+}
+
+section.operiamo-bottom-section .operiamo-bottom p {
+    font-family: var(--brand-font-family);
+    line-height: 20px;
+    margin-top: 20px;
+}
+
+.slick-next img{
+    margin-bottom: 5px;
+}
+
+/* Responsive  */
+
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+
+    .chi-siamo-mv-single.first-half button,
+    .chi-siamo-mv-single.first-half button.active,
+    .certificazioni-tab-section .chi-siamo-mv-single.first-half button.active {
+        margin-right: 150px;
+    }
+
+    .certificazioni-section .sedi-section-wrap h1 {
+        font-size: 175px;
+        line-height: 90px;
+    }
+
+    .valori-single-slider-item{
+        min-width: 280px;
+    }
+
+    .valori-single-info{
+        bottom: -183px;
+    }
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .operiamo-promo .team-bottom-title h1 {
+        font-size: 50px;
+        line-height: 55px;
+    }
+
+    .operiamo-promo .team-bottom-title ul li {
+        font-size: 30px;
+        margin-bottom: 10px;
+        line-height: 35px;
+    }
+
+   
+
+
+}
+
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .operiamo-cirle-single-item.first {
+        justify-content: center;
+    }
+
+    .operiamo-circle-slider {
+        display: inherit;
+    }
+
+    .operiamo-circle-slider .operiamo-cirle-single-item .box-wrap {
+        height: 400px;
+        width: 400px;
+    }
+
+    .crescita-section .section-title h1 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .crescita-section .section-title {
+        margin-bottom: -458px;
+    }
+
+    .crescita-section .crescita-tabs .crescita-tab-left h2 {
+        font-size: 28px;
+    }
+
+    .crescita-section .crescita-tabs .crescita-buttons {
+        top: -50px;
+        margin-bottom: 10px;
+    }
+
+    .crescita-tabs .crescita-para-wrap {
+        min-height: 150px;
+    }
+
+    .crescita-section .crescita-tabs .crescita-tab-left .crescita-number li {
+        padding: 10px 30px 10px 5px;
+        font-size: 22px;
+    }
+
+    .operiamo-wrokflow .single-operiamo-item {
+        margin-bottom: 20px;
+    }
+
+    .certificazioni-tab-section .chi-siamo-mv-single.first-half button.active {
+        margin-right: 0;
+        line-height: 65px;
+    }
+
+    .chi-siamo-mv-single.first-half button {
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+
+    .chi-siamo-mv-single.second-half {
+        justify-content: left;
+    }
+
+}
+
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .certificazioni-section .sedi-section-wrap h1 {
+        font-size: 50px;
+        line-height: 55px;
+    }
+
+    .crescita-section .crescita-tabs .crescita-tab-right {
+        display: none;
+    }
+
+    .divisioni-gallery .divisioni-text-wrap {
+        min-height: 660px;
+    }
+
+    .divisioni-gallery .divisioni-text-wrap ul {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .divisioni-gallery .divisioni-text-wrap ul {
+        padding: 50px 15px;
+
+    }
+
+    .divisioni-gallery .divisioni-text-wrap ul li p {
+        width: 300px;
+        padding-left: 0;
+    }
+
+    .operiamo-circle-slider .operiamo-cirle-single-item .box-wrap {
+        width: 280px;
+        height: 280px;
+    }
+
+    .operiamo-circle-slider .operiamo-cirle-single-item .box-wrap img {
+        min-width: 130px;
+    }
+
+    .operiamo-cirle-single-item.second>* {
+        margin-left: 15px;
+        width: 100%;
+    }
+
+    .height-eight-nighty {
+        min-height: 550px;
+    }
+
+    .operiamo-cirle-single-item.second h2 {
+        margin-top: 20px;
+        font-size: 50px;
+    }
+
+    .operiamo-cirle-single-item.second p {
+        font-size: 20px;
+    }
+
+    section.header-slider-bottom-area .single-slider-bottom-item h2 {
+        font-size: 35px;
+    }
+
+    .operiamo-wrokflow .operiamo-heading-two {
+        font-size: 35px;
+        line-height: 35px;
+        margin-bottom: 20px;
+    }
+
+    .operiamo-wrokflow .single-operiamo-item {
+        padding: 25px 20px 30px 20px;
+        margin-bottom: 20px;
+    }
+
+    .operiamo-wrokflow .single-operiamo-item h4,
+    .operiamo-wrokflow .single-operiamo-item h2 {
+        font-size: 25px;
+    }
+
+    section.divisioni .section-title h2 {
+        font-size: 35px;
+    }
+
+    .section-padding .mt-5.mb-5 {
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .divisioni-gallery .divisioni-text-wrap ul li {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .vantaggi-section .valori-single-item h1 span:nth-child(2) {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .vantaggi-section .valori-single-item h1 {
+        margin-bottom: 30px;
+    }
+
+    .valori-single-item h1 span {
+        line-height: 30px;
+    }
+
+    .crescita-section .section-title {
+        margin-bottom: -365px;
+        width: 100%;
+        padding-left: 15px;
+    }
+
+    section#numeri {
+        margin-top: 0;
+    }
+
+    .operiamo-promo .team-bottom-title h1 {
+        font-size: 45px;
+    }
+
+    .operiamo-promo .team-bottom-title ul li {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .certificazioni-section .sedi-section-wrap h1 span {
+        font-size: 50px;
+    }
+
+    .certificazioni-section .sedi-section-wrap h1 {
+        margin-top: 20px;
+    }
+
+    .certificazioni-tab-section .chi-siamo-mv-single.first-half button.active,
+    .certificazioni-tab-section .nav button {
+        margin-right: 0;
+    }
+
+    .certificazioni-tab-section .chi-siamo-mv-single.first-half button.active {
+        line-height: 40px;
+    }
+
+    .chi-siamo-mv-single.first-half button:last-child {
+        margin-left: 0;
+    }
+
+    .chi-siamo-mv-single.second-half .tab-pane .mission-vission-single-tab {
+        margin-left: 15px;
+    }
+
+    .lesixp-section .container.mt-5 {
+        margin-top: 20px !important;
+    }
+
+    .number-single-item p {
+        font-size: 17px;
+    }
+
+    .operiamo-circle-slider .operiamo-cirle-single-item .box-wrap {
+        margin: 20px auto;
+    }
+}
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {}

@@ -19,7 +19,9 @@ jQuery(document).ready(function ($) {
         slidesToShow: 4,
         // autoplay: true,
         prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-long-arrow-left' aria-hidden='true'></i></button>",
-        nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-long-arrow-right' aria-hidden='true'></i></button>",
+        // nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-long-arrow-right' aria-hidden='true'></i></button>",
+        nextArrow: "<button type='button' class='slick-next pull-right'><img src='assets/images/btn-arrow.png'></button>",
+
         nav: false,
         responsive: [
             {
@@ -53,7 +55,9 @@ jQuery(document).ready(function ($) {
         slidesToShow: 4,
         autoplay: true,
         prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-long-arrow-left' aria-hidden='true'></i></button>",
-        nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-long-arrow-right' aria-hidden='true'></i></button>",
+        // nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-long-arrow-right' aria-hidden='true'></i></button>",
+        nextArrow: "<button type='button' class='slick-next pull-right'><img src='assets/images/btn-arrow.png'></button>",
+
         nav: false,
         responsive: [
             {
@@ -95,32 +99,6 @@ jQuery(document).ready(function ($) {
             nextArrow: "<button type='button' class='slick-next pull-right'><img src='assets/images/arrow-white.png'></button>",
         });
 
-    // var $valTimelineslideContainter = $('.val-timeline-slider-container'),
-    //     $valTimeLineslider = $valTimelineslideContainter.slick({
-    //         slidesToShow: 1,
-    //         slidesToScroll: 1,
-    //         arrows: true,
-    //         infinite: true,
-    //         speed: 1000,
-    //         autoplay: true,
-    //         autoplaySpeed: 4000,
-    //         fade: true,
-    //     });
-
-    //     colorSettings = {
-    //         section: ['blue', 'yellow', 'red']
-    //     };
-
-    //     changeColors = function (slide) {
-    //         $valTimelineslideContainter.parentsUntil('.valori-timeline-single-item').css({ backgroundColor: 'colorSettings.section[slide]' });
-    //     };
-
-    // // Initial call to set color
-    // changeColors(0);
-
-    // $valTimeLineslider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-    //     changeColors(nextSlide);
-    // });
 
     // Team member slider 
     $('.team-member').slick({
@@ -159,18 +137,66 @@ jQuery(document).ready(function ($) {
     // Come operiamo 
 
     var divisioniLi = $(".divisioni-gallery .divisioni-text-wrap ul li");
+    var crescitaLi = $(".crescita-section .crescita-tabs .crescita-tab-left .crescita-number li");
 
     divisioniLi.hover(function (e) {
         var Liclass = $(this).attr('class');
 
         $(".divisioni-gallery .divisioni-text-wrap").addClass(Liclass);
     },
-    function (e) {
+        function (e) {
+            var Liclass = $(this).attr('class');
+
+            $(".divisioni-gallery .divisioni-text-wrap").removeClass(Liclass);
+        }
+    );
+
+
+    crescitaLi.hover(function (e) {
         var Liclass = $(this).attr('class');
 
-        $(".divisioni-gallery .divisioni-text-wrap").removeClass(Liclass);
-    }
+        // $(".crescita-section .crescita-tabs .crescita-tab-left p").addClass('active');
+
+        var crescitaInnerNumber = $(this).text();
+        var crescitaListP = $(".crescita-section .crescita-tabs .crescita-tab-left p");
+
+
+
+        if (crescitaInnerNumber == 1) {
+            crescitaListP.first().addClass('active');
+        } else if (crescitaInnerNumber == 2) {
+            crescitaListP.first().next().addClass('active');
+        } else if (crescitaInnerNumber == 3) {
+            crescitaListP.first().next().next().addClass('active');
+        } else if (crescitaInnerNumber == 4) {
+            crescitaListP.first().next().next().next().addClass('active');
+
+        } else if (crescitaInnerNumber == 5) {
+            crescitaListP.first().next().next().next().next().addClass('active');
+        }
+    },
+        function (e) {
+            var crescitaListP = $(".crescita-section .crescita-tabs .crescita-tab-left p");
+            crescitaListP.removeClass('active');
+            setTimeout(() => {
+                crescitaListP[0].addClass('active');
+            }, 1000);
+        }
     );
+
+    // crescita right button 
+    document.querySelectorAll('.crescita-section .crescita-tabs .crescita-buttons button').forEach(function (ele, idx) {
+        ele.addEventListener('click', function (e) {
+            var clickedEle = document.querySelector('.crescita-section .crescita-tabs .crescita-buttons button.active');
+            if (clickedEle != null)
+                clickedEle.classList.remove('active');
+            this.classList.add('active');
+
+            if (ele.dataset.color) {
+                $(".crescita-section .crescita-tabs").css('backgroundColor', ele.dataset.color);
+            }
+        });
+    });
 
 
 });
