@@ -592,12 +592,38 @@ section.operiamo-bottom-section .operiamo-bottom p {
     margin-top: 20px;
 }
 
-.slick-next img{
+.slick-next img {
     margin-bottom: 5px;
 }
 
 /* Responsive  */
 
+
+@media (max-width: 1450px) {
+    .crescita-section .section-title {
+        margin-bottom: -460px;
+    }
+
+    .valori-single-info {
+        bottom: -180px;
+    }
+
+    .certificazioni-section .eu-scisiamo-small-section-title {
+        left: -35px;
+    }
+
+    section#numeri .small-tilt {
+        left: -46px;
+    }
+
+    .vantaggi-section .small-tilt {
+        left: -20px;
+    }
+
+    .operiamo-first .small-tilt {
+        left: -35px;
+    }
+}
 
 /* // X-Large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
@@ -613,12 +639,22 @@ section.operiamo-bottom-section .operiamo-bottom p {
         line-height: 90px;
     }
 
-    .valori-single-slider-item{
+    .valori-single-slider-item {
         min-width: 280px;
     }
 
-    .valori-single-info{
+    .valori-single-info {
         bottom: -183px;
+    }
+
+    section.header-slider-bottom-area .single-slider-bottom-item h2 {
+        font-size: 45px;
+    }
+}
+
+@media (max-width:1280px) {
+    .certificazioni-section .small-tilt {
+        left: -35px !important;
     }
 }
 
@@ -635,7 +671,39 @@ section.operiamo-bottom-section .operiamo-bottom p {
         line-height: 35px;
     }
 
-   
+    section.header-slider-bottom-area .single-slider-bottom-item h2 {
+        font-size: 35px;
+    }
+
+    .crescita-section .crescita-tabs .crescita-buttons {
+        right: 0;
+        top: 0;
+    }
+
+    .crescita-section .crescita-tabs .crescita-tab-left h2 {
+        font-size: 28px;
+    }
+
+    .crescita-section .section-title h1 {
+        font-size: 80px;
+        line-height: 80px;
+    }
+
+    .certificazioni-section .sedi-section-wrap h1{
+        font-size: 80px;
+        line-height: 80px;
+    }
+
+    .certificazioni-section .sedi-section-wrap h1 span{
+        font-size: 75px;
+        display: block;
+    }
+
+    .certificazioni-tab-section .chi-siamo-mv-single.first-half button.active:after{
+        bottom: 38px;
+    }
+
+
 
 
 }
@@ -700,6 +768,8 @@ section.operiamo-bottom-section .operiamo-bottom p {
     .chi-siamo-mv-single.second-half {
         justify-content: left;
     }
+
+
 
 }
 
@@ -809,8 +879,9 @@ section.operiamo-bottom-section .operiamo-bottom p {
     }
 
     .crescita-section .section-title {
-        margin-bottom: -365px;
-        width: 100%;
+        margin-bottom: -320px;
+        width: 90%;
+
         padding-left: 15px;
     }
 
@@ -863,7 +934,19 @@ section.operiamo-bottom-section .operiamo-bottom p {
     .operiamo-circle-slider .operiamo-cirle-single-item .box-wrap {
         margin: 20px auto;
     }
+
+    .crescita-section .crescita-tabs {
+        grid-template-columns: 100%;
+    }
+
+    .crescita-section .section-title {
+        padding-left: 100px;
+    }
 }
 
 /* // X-Small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+    .crescita-section .section-title{
+        padding-left: 15px;
+    }
+}
