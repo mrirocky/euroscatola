@@ -8,7 +8,7 @@ jQuery(document).ready(function ($) {
                 clickedEle.classList.remove('show');
             // this.previousElementSibling.style.borderBottom = '1px solid';
             this.classList.add('show');
-            this.previousElementSibling.style.border = 'none';
+            // this.previousElementSibling.style.border = 'none';
 
         })
     });
@@ -146,6 +146,8 @@ jQuery(document).ready(function ($) {
     var divisioniLi = $(".divisioni-gallery .divisioni-text-wrap ul li");
     var crescitaLi = $(".crescita-section .crescita-tabs .crescita-tab-left .crescita-number li");
 
+
+
     divisioniLi.hover(function (e) {
         var Liclass = $(this).attr('class');
 
@@ -158,38 +160,53 @@ jQuery(document).ready(function ($) {
         }
     );
 
-
     crescitaLi.hover(function (e) {
         var Liclass = $(this).attr('class');
 
-        // $(".crescita-section .crescita-tabs .crescita-tab-left p").addClass('active');
-
-        var crescitaInnerNumber = $(this).text();
-        var crescitaListP = $(".crescita-section .crescita-tabs .crescita-tab-left p");
-
-
-
-        if (crescitaInnerNumber == 1) {
-            crescitaListP.first().addClass('active');
-        } else if (crescitaInnerNumber == 2) {
-            crescitaListP.first().next().addClass('active');
-        } else if (crescitaInnerNumber == 3) {
-            crescitaListP.first().next().next().addClass('active');
-        } else if (crescitaInnerNumber == 4) {
-            crescitaListP.first().next().next().next().addClass('active');
-
-        } else if (crescitaInnerNumber == 5) {
-            crescitaListP.first().next().next().next().next().addClass('active');
-        }
+        $(".crescita-section .crescita-tabs .crescita-tab-right").addClass(Liclass);
     },
         function (e) {
-            var crescitaListP = $(".crescita-section .crescita-tabs .crescita-tab-left p");
-            crescitaListP.removeClass('active');
-            setTimeout(() => {
-                crescitaListP[0].addClass('active');
-            }, 1000);
+            var Liclass = $(this).attr('class');
+
+            $(".crescita-section .crescita-tabs .crescita-tab-right").removeClass(Liclass);
         }
     );
+
+
+
+
+    const EuroscatolaAllNumber = document.querySelectorAll(".crescita-number > li");
+    const EuroscatolaAllPtag = document.querySelectorAll(".crescita-section .crescita-tabs .number-bottom-desc");
+
+    const background = document.querySelector(".crescita-section .crescita-tabs .crescita-tab-right");
+    const ImageURLArr = [
+        "assets/images/Operiamo/crescita-tab.png",
+        "assets/images/Operiamo/operiamo-brand-image.jpg",
+        "assets/images/Operiamo/operiamo-sustain-tab.jpg",
+        "assets/images/Operiamo/operiamo-brand-image.jpg",
+        "assets/images/Operiamo/operiamo-circle-slider-bg.png"
+    ];
+
+    if (EuroscatolaAllNumber) {
+
+        EuroscatolaAllNumber.forEach((e, indx) => {
+            e.addEventListener('mouseover', () => {
+                EuroscatolaAllPtag[indx].classList.add("active");
+                EuroscatolaAllNumber[indx].classList.add("active");
+                background.style.backgroundImage = `url(${ImageURLArr[indx]})`;
+
+                for (let i = 0; i < EuroscatolaAllNumber.length; i++) {
+                    if (indx == i) continue;
+                    else EuroscatolaAllPtag[i].classList.remove("active");
+                }
+
+                for (let i = 0; i < EuroscatolaAllNumber.length; i++) {
+                    if (indx == i) continue;
+                    else EuroscatolaAllNumber[i].classList.remove("active");
+                }
+            })
+        });
+    }
 
     // crescita right button 
     document.querySelectorAll('.crescita-section .crescita-tabs .crescita-buttons button').forEach(function (ele, idx) {

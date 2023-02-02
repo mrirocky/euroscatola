@@ -393,7 +393,7 @@ p.eu-scisiamo-small-section-title.small-tilt {
 
 .chi-siamo-mv-single.second-half .mission-vission-single-tab p {
     width: 380px;
-    font-family: 'IBM Plex Sans';
+    font-family: var(--brand-font-family);
     font-size: 18px;
 }
 
@@ -571,6 +571,7 @@ p.eu-scisiamo-small-section-title.small-tilt {
 
 .team-member-item {
     /* max-width: 33%; */
+    margin-bottom: -15px;
 }
 
 .team-member-top-title {
@@ -612,7 +613,7 @@ p.eu-scisiamo-small-section-title.small-tilt {
     line-height: 73px;
     color: #ffffff;
     font-weight: 300;
-    font-family: "IBM Plex Sans";
+    font-family: var(--brand-font-family);
 }
 
 .team-button {
@@ -647,7 +648,7 @@ p.eu-scisiamo-small-section-title.small-tilt {
     line-height: 30px;
     color: #121212;
     font-weight: 400;
-    font-family: "IBM Plex Sans";
+    font-family: var(--brand-font-family);
 }
 
 .team-bottom-title ul {
@@ -660,7 +661,7 @@ p.eu-scisiamo-small-section-title.small-tilt {
     line-height: 30px;
     color: #121212;
     font-weight: 400;
-    font-family: "IBM Plex Sans";
+    font-family: var(--brand-font-family);
 }
 
 /* valori section styleing start now */
@@ -774,7 +775,7 @@ p.eu-scisiamo-small-section-title.small-tilt {
     line-height: 20px;
     color: #121212;
     font-weight: 400;
-    font-family: "IBM Plex Sans";
+    font-family: var(--brand-font-family);
     margin-top: 30px;
 }
 
@@ -786,7 +787,9 @@ p.eu-scisiamo-small-section-title.small-tilt {
     background-color: #ca1868;
 }
 
-
+.persone-section .small-tilt{
+    left: 20px !important;
+}
 /* valori-timeline section styleing now */
 .valori-timeline {
     padding: 50px 0px;
@@ -843,7 +846,7 @@ p.eu-scisiamo-small-section-title.small-tilt {
     line-height: 25px;
     color: #f3f1ee;
     font-weight: 400;
-    font-family: "IBM Plex Sans";
+    font-family: var(--brand-font-family);
     margin-top: 160px;
 }
 

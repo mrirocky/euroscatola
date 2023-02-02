@@ -32,11 +32,21 @@
     background-position: left center;
 }
 
+
+.c-economy__image img {
+    max-width: 150px;
+}
+
+
 .operiamo-circle-slider .operiamo-cirle-single-item .box-wrap {
     height: 780px;
     width: 780px;
-    background: #c51d69;
+    /* background: #c51d69; */
+    background-image: url(../images/Operiamo/temp-circle-bg.png);
     border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .operiamo-cirle-single-item.second h2 {
@@ -379,6 +389,7 @@ section.divisioni .section-title h2 span {
     font-family: var(--brand-font-family);
     position: relative;
     font-weight: 200;
+    cursor: pointer;
 }
 
 .crescita-section .crescita-tabs .crescita-tab-left .crescita-number li:before {
@@ -412,11 +423,13 @@ section.divisioni .section-title h2 span {
     transition: .3s;
 }
 
-.crescita-section .crescita-tabs .crescita-tab-left .crescita-number li:hover:after {
+.crescita-section .crescita-tabs .crescita-tab-left .crescita-number li:hover:after,
+.crescita-section .crescita-tabs .crescita-tab-left .crescita-number li.active:after {
     transform: scaleX(1);
 }
 
-.crescita-section .crescita-tabs .crescita-tab-left .crescita-number li:hover {
+.crescita-section .crescita-tabs .crescita-tab-left .crescita-number li:hover,
+.crescita-section .crescita-tabs .crescita-tab-left .crescita-number li.active {
     font-weight: 400;
 }
 
@@ -472,6 +485,22 @@ section.divisioni .section-title h2 span {
     background-position: center center;
     background-repeat: no-repeat;
     z-index: 1;
+}
+
+.crescita-section .crescita-tabs .crescita-tab-right.two {
+    background-image: url(https://images.unsplash.com/photo-1557064262-6acc904bffbd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80);
+}
+
+.crescita-section .crescita-tabs .crescita-tab-right.three {
+    background-image: url(https://images.unsplash.com/photo-1542274368-443d694d79aa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80);
+}
+
+.crescita-section .crescita-tabs .crescita-tab-right.four {
+    background-image: url(https://images.unsplash.com/photo-1543304376-1ae7c2be5e59?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=728&q=80);
+}
+
+.crescita-section .crescita-tabs .crescita-tab-right.five {
+    background-image: url(https://images.unsplash.com/photo-1513069916672-918ea0e44870?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80);
 }
 
 .crescita-section .section-title {
@@ -689,17 +718,17 @@ section.operiamo-bottom-section .operiamo-bottom p {
         line-height: 80px;
     }
 
-    .certificazioni-section .sedi-section-wrap h1{
+    .certificazioni-section .sedi-section-wrap h1 {
         font-size: 80px;
         line-height: 80px;
     }
 
-    .certificazioni-section .sedi-section-wrap h1 span{
+    .certificazioni-section .sedi-section-wrap h1 span {
         font-size: 75px;
         display: block;
     }
 
-    .certificazioni-tab-section .chi-siamo-mv-single.first-half button.active:after{
+    .certificazioni-tab-section .chi-siamo-mv-single.first-half button.active:after {
         bottom: 38px;
     }
 
@@ -946,7 +975,7 @@ section.operiamo-bottom-section .operiamo-bottom p {
 
 /* // X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-    .crescita-section .section-title{
+    .crescita-section .section-title {
         padding-left: 15px;
     }
 }
